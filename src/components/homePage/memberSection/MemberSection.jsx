@@ -96,7 +96,7 @@ function MemberSection() {
         </Slider>
       
     </div>
-    {/* <MemoMemberSLider /> */}
+    <MemoMemberSLider />
   </div>
   
 </section>
