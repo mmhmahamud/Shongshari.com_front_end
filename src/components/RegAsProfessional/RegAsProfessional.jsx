@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 const RegAsProfessional = () => {
+  const [userInfo, setUserInfo] = useState({});
+
+  //setting data on
+  const handleBlur = (e) => {
+    let newUserInfo = { ...userInfo };
+    newUserInfo[e.target.name] = e.target.value;
+    setUserInfo(newUserInfo);
+  };
+  console.log(userInfo);
   return (
     <div className="main-body">
       <section className="log-reg">
@@ -35,11 +46,15 @@ const RegAsProfessional = () => {
                         <label htmlFor>Registration</label>
                         <div className="option">
                           <div className="s-input nice-select-wraper">
-                            <select className="select-bar o__registerOption">
-                              <option value>User</option>
-                              <option value>Lawyer</option>
-                              <option value>Agent</option>
-                              <option value>Kazi</option>
+                            <select
+                              onChange={handleBlur}
+                              name="role"
+                              className="select-bar o__registerOption"
+                            >
+                              <option>User</option>
+                              <option>Lawyer</option>
+                              <option>Agent</option>
+                              <option>Kazi</option>
                             </select>
                           </div>
                         </div>
@@ -53,6 +68,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>First Name*</label>
                           <input
+                            onBlur={handleBlur}
+                            name="firstName"
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your First Name"
@@ -61,6 +78,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Last Name*</label>
                           <input
+                            onBlur={handleBlur}
+                            name="lastName"
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Last Name"
@@ -72,14 +91,18 @@ const RegAsProfessional = () => {
                           <label htmlFor>Registration For*</label>
                           <div className="option">
                             <div className="s-input nice-select-wraper">
-                              <select className="select-bar">
-                                <option value>Myself</option>
-                                <option value>My Brother</option>
-                                <option value>My Sister</option>
-                                <option value>My Son</option>
-                                <option value>My Daughter</option>
-                                <option value>My Relative</option>
-                                <option value>Friend</option>
+                              <select
+                                onChange={handleBlur}
+                                name="registerFor"
+                                className="select-bar"
+                              >
+                                <option>Myself</option>
+                                <option>My Brother</option>
+                                <option>My Sister</option>
+                                <option>My Son</option>
+                                <option>My Daughter</option>
+                                <option>My Relative</option>
+                                <option>Friend</option>
                               </select>
                             </div>
                           </div>
@@ -87,6 +110,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Ancestry</label>
                           <input
+                            name="ancestry"
+                            onBlur={handleBlur}
                             type="email"
                             className="my-form-control"
                             placeholder="Enter Your Ancestry"
@@ -98,21 +123,36 @@ const RegAsProfessional = () => {
                           <label htmlFor>Marital Status*</label>
                           <div className="option">
                             <div className="s-input nice-select-wraper">
-                              <select className="select-bar">
-                                <option value>Single</option>
-                                <option value>Married</option>
-                                <option value>Divorce</option>
+                              <select
+                                onChange={handleBlur}
+                                name="maritalStatus"
+                                className="select-bar"
+                              >
+                                <option>Single</option>
+                                <option>Married</option>
+                                <option>Divorce</option>
                               </select>
                             </div>
                           </div>
                         </div>
                         <div className="form-group col-md-6">
-                          <label htmlFor>Religion</label>
-                          <input
-                            type="email"
-                            className="my-form-control"
-                            placeholder="Enter Your Religion"
-                          />
+                          <label htmlFor>Religion*</label>
+                          <div className="option">
+                            <div className="s-input nice-select-wraper">
+                              <select
+                                onChange={handleBlur}
+                                name="religion"
+                                className="select-bar"
+                              >
+                                <option>Muslim</option>
+                                <option>Hindu</option>
+                                <option>Christian</option>
+                                <option>Buddhist</option>
+                                <option>Shikh</option>
+                                <option>Others</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div className="row">
@@ -120,14 +160,21 @@ const RegAsProfessional = () => {
                           <label htmlFor>I am a*</label>
                           <div className="option">
                             <div className="s-input mr-3">
-                              <input type="radio" name="gender1" id="males1" />
+                              <input
+                                type="radio"
+                                name="gender1"
+                                id="males1"
+                                value="male"
+                              />
                               <label>Man</label>
                             </div>
                             <div className="s-input">
                               <input
+                                onChange={handleBlur}
                                 type="radio"
                                 name="gender1"
                                 id="females1"
+                                value="female"
                               />
                               <label>Woman</label>
                             </div>
@@ -168,6 +215,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Use Refer Code</label>
                           <input
+                            name='referCode'
+                            onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Refer Code"
@@ -178,6 +227,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Email*</label>
                           <input
+                            name="email"
+                            onBlur={handleBlur}
                             type="email"
                             className="my-form-control"
                             placeholder="Enter Your Email"
@@ -186,6 +237,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Phone*</label>
                           <input
+                            name="phone"
+                            onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Phone Number"
@@ -196,6 +249,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Password*</label>
                           <input
+                            name="password"
+                            onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Password"
@@ -204,6 +259,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Confirm Password*</label>
                           <input
+                            name="confirmPassword"
+                            onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Password"

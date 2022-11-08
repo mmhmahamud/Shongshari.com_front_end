@@ -6,13 +6,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   authenticated: false,
   loading: true,
-  currentUser: [],
+  currentUser: {},
   loginShow: false,
   type: "",
 };
 
 export const AuthSlices = createSlice({
-  name: "shopUtils",
+  name: "auth",
   initialState,
   reducers: {
     authenticatedData: (state, { payload }) => {
