@@ -3590,7 +3590,7 @@ input[type="submit"] {
 
 /* latest-registered-section Starts Here */
 .latest-registered-section {
-  padding: 118px 0px 80px;
+  padding: 80px 0px 80px;
   background: #5736cb;
   position: relative;
   overflow: hidden;
@@ -3630,7 +3630,7 @@ input[type="submit"] {
 }
 
 .latest-registered-section .content {
-  padding-left: 40%;
+  padding-left: 20%;
   padding-right: 200px;
   position: relative;
   z-index: 3;
