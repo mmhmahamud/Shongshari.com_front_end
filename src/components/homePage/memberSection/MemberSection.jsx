@@ -22,8 +22,8 @@ function MemberSection() {
     <section className="latest-registered-section">
       <img className="shape" src={shape} alt="" />
       <div className="container-fluid">
-        <div className="row ">
-          <div className="col-xl-6">
+        <div className="row justify-content-between align-items-center">
+          <div className="col-lg-5">
             <div className="content">
               <div className="section-header">
                 <h6 className="sub-title extra-padding wow fadeInUp">
@@ -40,58 +40,60 @@ function MemberSection() {
               </a>
             </div>
           </div>
-          <Slider {...settings}>
-            <div className="swiper-slide bg-primary position-relative -top-20">
-              <div className="single-slider">
-                <div className="img">
-                  <img src={p1} alt="img" />
-                </div>
-                <div className="inner-content">
-                  <h4 className="name">DANA MILLS</h4>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="single-slider">
-                <div className="img">
-                  <img src={p2} alt="img" />
-                </div>
-                <div className="inner-content">
-                  <h4 className="name">DANA MILLS</h4>
+          <div className="col-lg-6">
+            <Slider {...settings}>
+              <div className="swiper-slide">
+                <div className="single-slider">
+                  <div className="img">
+                    <img src={p1} alt="img" />
+                  </div>
+                  <div className="inner-content">
+                    <h4 className="name">DANA MILLS</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="single-slider">
-                <div className="img">
-                  <img src={p3} alt="img" />
-                </div>
-                <div className="inner-content">
-                  <h4 className="name">DANA MILLS</h4>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="single-slider">
-                <div className="img">
-                  <img src={p4} alt="img" />
-                </div>
-                <div className="inner-content">
-                  <h4 className="name">DANA MILLS</h4>
+              <div className="swiper-slide">
+                <div className="single-slider">
+                  <div className="img">
+                    <img src={p2} alt="img" />
+                  </div>
+                  <div className="inner-content">
+                    <h4 className="name">DANA MILLS</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="single-slider">
-                <div className="img">
-                  <img src={p5} alt="img" />
-                </div>
-                <div className="inner-content">
-                  <h4 className="name">DANA MILLS</h4>
+              <div className="swiper-slide">
+                <div className="single-slider">
+                  <div className="img">
+                    <img src={p3} alt="img" />
+                  </div>
+                  <div className="inner-content">
+                    <h4 className="name">DANA MILLS</h4>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Slider>
+              <div className="swiper-slide">
+                <div className="single-slider">
+                  <div className="img">
+                    <img src={p4} alt="img" />
+                  </div>
+                  <div className="inner-content">
+                    <h4 className="name">DANA MILLS</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="single-slider">
+                  <div className="img">
+                    <img src={p5} alt="img" />
+                  </div>
+                  <div className="inner-content">
+                    <h4 className="name">DANA MILLS</h4>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
         </div>
         <MemoMemberSLider />
       </div>
