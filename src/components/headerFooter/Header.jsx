@@ -65,18 +65,21 @@ function Header() {
           isHaderActive ? "header-section  header-active" : " header-section"
         }
       >
-        <div className="container">
+        <div className="container py-2">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-12 d-flex">
               <div className="header-wrapper">
-                <div className="logo">
-                  <Link to={"/"}>
-                    <img className="black__logo" src={blackLogo} alt="logo" />
-                    <img className="white__logo" src={white__logo} alt="logo" />
-                  </Link>
-                </div>
-
                 <div className="header__iconWrpr">
+                  <div className="logo d-flex align-items-center">
+                    <Link to={"/"}>
+                      <img className="black__logo" src={blackLogo} alt="logo" />
+                      <img
+                        className="white__logo"
+                        src={white__logo}
+                        alt="logo"
+                      />
+                    </Link>
+                  </div>
                   <ul className={isActive ? "menu active" : "menu"}>
                     <li>
                       <Link to={"/partner"}>

@@ -43,7 +43,69 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
+                    <span style={{ color: "#ff337c" }}>22</span>
+                  </h4>
+                  <span>Studen</span>
+                  <p>Barishal, Bangladesh</p>
+                </div>
+                <div className="info__cardUp">
+                  <div className="info__cardImg">
+                    <img src={kateBrunch} alt="card__img" />
+                  </div>
+                  <h4 style={{ color: "white" }} className="name">
+                    Sajia Jahan Rakha
+                    <span>22</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      <p>
+                        <span>Occupation</span> Student
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Location</span> Brishal, Bangladesh
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Home Town</span> Barishal
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Education</span> Hon’s ( deparment of Marketing )
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Religion</span> Muslim
+                      </p>
+                    </li>
+                  </ul>
+                  <div className="info__social">
+                    <a href="#">
+                      <i className="fas fa-user"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fas fa-comment"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fas fa-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="single-slider">
+                <div className="img o__profileCardImg">
+                  <img src={kateBrunch} alt="" />
+                </div>
+                <div className="inner-content inner__contentSlide">
+                  <h4 className="name">
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -54,7 +116,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -105,7 +167,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -116,7 +178,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -167,7 +229,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -178,7 +240,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -229,7 +291,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -240,7 +302,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -291,7 +353,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -302,7 +364,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -353,7 +415,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -364,7 +426,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>
@@ -415,7 +477,7 @@ function WithoutLoginSuggested() {
                 </div>
                 <div className="inner-content inner__contentSlide">
                   <h4 className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span style={{ color: "#ff337c" }}>24</span>
                   </h4>
                   <span>Model</span>
@@ -426,69 +488,7 @@ function WithoutLoginSuggested() {
                     <img src={kateBrunch} alt="card__img" />
                   </div>
                   <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
-                    <span>24</span>
-                  </h4>
-                  <ul>
-                    <li>
-                      <p>
-                        <span>Occupation</span> Lorem, ipsum dolor.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <span>Location</span> Lorem, ipsum.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <span>Home Town</span> Lorem ipsum dolor sit amet.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <span>Education</span> Lorem ipsum dolor sit.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <span>Religion</span> Muslim
-                      </p>
-                    </li>
-                  </ul>
-                  <div className="info__social">
-                    <a href="#">
-                      <i className="fas fa-user"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fas fa-comment"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fas fa-heart"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="single-slider">
-                <div className="img o__profileCardImg">
-                  <img src={kateBrunch} alt="" />
-                </div>
-                <div className="inner-content inner__contentSlide">
-                  <h4 className="name">
-                    Rifat Ara
-                    <span style={{ color: "#ff337c" }}>24</span>
-                  </h4>
-                  <span>Model</span>
-                  <p>Noakhali, Bangladesh</p>
-                </div>
-                <div className="info__cardUp">
-                  <div className="info__cardImg">
-                    <img src={kateBrunch} alt="card__img" />
-                  </div>
-                  <h4 style={{ color: "white" }} className="name">
-                    Rifat Ara
+                    Sajia Jahan Rakha
                     <span>24</span>
                   </h4>
                   <ul>

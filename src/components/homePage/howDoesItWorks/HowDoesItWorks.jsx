@@ -92,7 +92,7 @@ function HowDoesItWorks() {
                 <img src={icon3} alt="img" />
                 <div className="number">03</div>
               </div>
-              <h4 className="title">Start Dating</h4>
+              <h4 className="title">Start Family</h4>
               <a href="#" className="custom-button">
                 Join Now !
               </a>
