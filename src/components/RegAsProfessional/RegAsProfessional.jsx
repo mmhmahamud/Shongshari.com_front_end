@@ -160,13 +160,8 @@ const RegAsProfessional = () => {
                           <label htmlFor>I am a*</label>
                           <div className="option">
                             <div className="s-input mr-3">
-                              <input
-                                type="radio"
-                                name="gender1"
-                                id="males1"
-                                value="male"
-                              />
-                              <label>Man</label>
+                              <input type="radio" name="gender1" id="males1" />
+                              <label for="males1">Man</label>
                             </div>
                             <div className="s-input">
                               <input
@@ -176,7 +171,7 @@ const RegAsProfessional = () => {
                                 id="females1"
                                 value="female"
                               />
-                              <label>Woman</label>
+                              <label for="females1">Woman</label>
                             </div>
                           </div>
                         </div>
@@ -185,11 +180,11 @@ const RegAsProfessional = () => {
                           <div className="option">
                             <div className="s-input mr-3">
                               <input type="radio" name="gender2" id="males" />
-                              <label>Man</label>
+                              <label for="males">Man</label>
                             </div>
                             <div className="s-input">
                               <input type="radio" name="gender2" id="females" />
-                              <label>Woman</label>
+                              <label for="females">Woman</label>
                             </div>
                           </div>
                         </div>
@@ -200,7 +195,7 @@ const RegAsProfessional = () => {
                           <div className="option">
                             <div className="s-input mr-3">
                               <input type="radio" name="gender3" id="males3" />
-                              <label>Free Account</label>
+                              <label for="males3">Free Account</label>
                             </div>
                             <div className="s-input">
                               <input
@@ -208,7 +203,7 @@ const RegAsProfessional = () => {
                                 name="gender3"
                                 id="females3"
                               />
-                              <label>Premium Account</label>
+                              <label for="females3">Premium Account</label>
                             </div>
                           </div>
                         </div>
