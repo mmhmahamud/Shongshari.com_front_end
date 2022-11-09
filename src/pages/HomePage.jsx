@@ -26,6 +26,7 @@ function HomePage() {
 
 	const dispatch = useDispatch();
 
+
 	useEffect(() => {
 		dispatch(blogListAction());
 	}, []);
