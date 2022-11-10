@@ -13,8 +13,8 @@ const settings = {
   speed: 1000,
   autoplay: true,
   autoplaySpeed: 2000,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   swipeToSlide: true,
 };
 function MemberSection() {
@@ -40,7 +40,7 @@ function MemberSection() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <Slider {...settings}>
               <div className="swiper-slide">
                 <div className="single-slider">

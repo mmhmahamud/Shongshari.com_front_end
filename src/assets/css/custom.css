@@ -839,8 +839,17 @@ span.cart-item {
   width: 399px;
   height: 167px;
 }
+.forget-password {
+  width: 50%;
+  background: linear-gradient(155deg, #ca8a14e8 0%, #f1f106f5 100%);
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 500;
+}
 .loginBtn {
   background: linear-gradient(155deg, rgba(228, 18, 114, 1) 0%, #4844a5 100%);
+
   color: white;
   font-size: 26px;
   font-weight: 500;

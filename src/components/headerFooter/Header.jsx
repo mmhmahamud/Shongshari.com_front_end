@@ -70,16 +70,11 @@ function Header() {
             <div className="col-lg-12 d-flex">
               <div className="header-wrapper">
                 <div className="header__iconWrpr">
-                  <div className="logo d-flex align-items-center">
-                    <Link to={"/"}>
-                      <img className="black__logo" src={blackLogo} alt="logo" />
-                      <img
-                        className="white__logo"
-                        src={white__logo}
-                        alt="logo"
-                      />
-                    </Link>
-                  </div>
+                  <Link to={"/"}>
+                    <img className="black__logo" src={blackLogo} alt="logo" />
+                    {/* <img className="white__logo" src={white__logo} alt="logo" /> */}
+                  </Link>
+
                   <ul className={isActive ? "menu active" : "menu"}>
                     <li>
                       <Link to={"/partner"}>
@@ -192,11 +187,17 @@ function Header() {
                         <img src={register} alt="img" />
                         <span className="tooltip__o tooltip__02">
                           <Link to="/login">login</Link>
-                          <a onClick={() => handleRegShow()}>
+                          <a
+                            style={{ display: "none" }}
+                            onClick={() => handleRegShow()}
+                          >
                             Register as Member
                           </a>
 
-                          <Link to="/regAsProfessional">
+                          <Link
+                            style={{ display: "none" }}
+                            to="/regAsProfessional"
+                          >
                             Register as a Professional
                           </Link>
                         </span>
