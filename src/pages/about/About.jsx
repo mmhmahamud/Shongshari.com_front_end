@@ -48,11 +48,8 @@ const About = () => {
                     <br />
                     <p className="mb-0">
                       As a result, the customer service desk recommends that
-                      customers should consider contacting them via their
-                      website. We realize that it’s not a simple task to
-                      understand what options you have when it comes to contact
-                      with their help desk. We, therefore, find it helpful if we
-                      share some of our research work with you.
+                      customers should consider contacting them via their website. We realize that it’s not a simple task to understand what options you have when it comes to contact with their help desk. We,
+                      therefore, find it helpful if we share some of our research work with you.
                     </p>
                   </div>
                 </div>
@@ -71,9 +68,8 @@ const About = () => {
                     <h6 className="sub-title">How We’re different</h6>
                     <h2 className="title extra-padding">Why Choose Us?</h2>
                     <p>
-                      There are lots of online Life partner sites available
-                      which makes it difficult to choose the one which can give
-                      you a serious partner....
+                      There are lots of online dating sites available which makes it difficult
+                      to choose the one which can give you a serious partner....
                     </p>
                   </div>
                 </div>
@@ -226,7 +222,8 @@ const About = () => {
                 <div className="content">
                   <div className="section-header white-color">
                     <h2 className="title">
-                      Best Ways to Find Your True Sole Mate
+                      Best Ways to Find Your
+                      True Sole Mate
                     </h2>
                   </div>
                   <a href="#" className="custom-button">
@@ -311,7 +308,8 @@ const About = () => {
                       <span />
                     </div>
                     <h4 className="title">
-                      ‘love at first sight’ is all about initial attraction...
+                      ‘love at first sight’ is all
+                      about initial attraction...
                     </h4>
                     <p className="date">December 11, 2021</p>
                   </div>
@@ -355,7 +353,8 @@ const About = () => {
                       <span />
                     </div>
                     <h4 className="title">
-                      What women actually want to feel on their...
+                      What women actually
+                      want to feel on their...
                     </h4>
                     <p className="date">December 14, 2021</p>
                   </div>

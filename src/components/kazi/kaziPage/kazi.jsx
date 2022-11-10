@@ -7,7 +7,7 @@ function Kazi() {
   return (
     <MainLayout>
       <div className="main-body">
-        <CommonHeaderLayout name={"Kazi"} />
+        {/* <CommonHeaderLayout name={"Kazi"} /> */}
         {/* <kaziBody /> */}
         <KaziPageBody />
       </div>
