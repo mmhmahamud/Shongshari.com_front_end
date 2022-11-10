@@ -46,7 +46,7 @@ const dummyData = [
     gender: 'm'
   },
   {
-    name: "Md. Tohidul islam shohag",
+    name: "Md. Tohidul islam",
     age: 27,
     hight: "5 feet 6",
     profession: "Private holder",
