@@ -10,7 +10,8 @@ import shape3 from "../../assets/img/footer/right-shape.png";
 
 function Footer() {
 
-  const handlePopUp = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
     toast.warning('Under construction')
   }
   return (
@@ -35,7 +36,7 @@ function Footer() {
                   <p className="text">
                     Sign up to receive a monthly email on the latest news!
                   </p>
-                  <form className="newslater-form">
+                  <form className="newslater-form" onSubmit={handlePopUp}>
                     <input type="text" placeholder="Your Email Address" />
                     <button type="submit">
                       <i className="fab fa-telegram-plane"></i>

@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 import shape2 from "../../../assets/img/h-it-w/bird.png";
 import shape1 from "../../../assets/img/h-it-w/circle-shape.png";
 import icon2 from "../../../assets/img/h-it-w/icon1.png";
@@ -6,6 +7,10 @@ import icon1 from "../../../assets/img/h-it-w/icon2.png";
 import icon3 from "../../../assets/img/h-it-w/icon3.png";
 
 function HowDoesItWorks() {
+
+  const handlePopUp = () => {
+    toast.warning('Under construction')
+  }
   return (
     <section className="how-it-work-section">
       <img className="shape1" src={shape1} alt="img" />
@@ -53,7 +58,7 @@ function HowDoesItWorks() {
                 <div className="number">01</div>
               </div>
               <h4 className="title">Tell us who you are!</h4>
-              <a href="#" className="custom-button">
+              <a href="#" className="custom-button" onClick={handlePopUp}>
                 Join Now !
               </a>
             </div>
@@ -73,7 +78,7 @@ function HowDoesItWorks() {
                 <div className="number">02</div>
               </div>
               <h4 className="title">Find the right person</h4>
-              <a href="#" className="custom-button">
+              <a href="#" className="custom-button" onClick={handlePopUp}>
                 Join Now !
               </a>
             </div>
@@ -93,7 +98,7 @@ function HowDoesItWorks() {
                 <div className="number">03</div>
               </div>
               <h4 className="title">Start Dating</h4>
-              <a href="#" className="custom-button">
+              <a href="#" className="custom-button" onClick={handlePopUp}>
                 Join Now !
               </a>
             </div>
