@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import { useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { Autoplay, Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,6 +45,7 @@ const Blog = () => {
   };
 
   useEffect(() => {
+    toast.warning('This page is Under Construction')
     dispatch(blogListAction());
   }, []);
 

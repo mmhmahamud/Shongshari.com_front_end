@@ -21,7 +21,7 @@ function CourseIndex() {
       <div className="main-body">
         <CommonHeaderLayout name={"Course"} />
         <section className="findPartner banner-section">
-          <div className="container">
+          {/* <div className="container">
             <div className="row">
               <FilterCourse />
               <div className="col-lg-9">
@@ -71,7 +71,8 @@ function CourseIndex() {
                 </section>
               </div>
             </div>
-          </div>
+          </div> */}
+          <h1 className="d-flex justify-content-center text-warning">Under Contruction</h1>
         </section>
       </div>
     </>
