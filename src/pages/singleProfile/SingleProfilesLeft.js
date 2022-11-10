@@ -33,7 +33,7 @@ const SingleProfilesLeft = () => {
                 </div>
                 <div class="right">
                   <a href="#" class="profile-custom-button">
-                    <i class="fab fa-cloudversify"></i> Get Premium
+                    <i class="fab fa-cloudversify"></i> Send Connection Request
                   </a>
                 </div>
               </div>
