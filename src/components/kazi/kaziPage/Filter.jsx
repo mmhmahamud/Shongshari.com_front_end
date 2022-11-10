@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Filter() {
+  const handleUnderConstruction = () => {
+    toast("Under Construction", {
+      position: "top-center",
+      autoClose: 3000,
+    });
+  };
   return (
     <div className="col-lg-3 p-xl-0 mb-4 mb-lg-0">
       <div
@@ -140,11 +147,15 @@ function Filter() {
         </div>
         <div className="joun-button">
           {/* <form action="search-result.php"> */}
-          <Link to={"/partner/searched"}>
-            <button type="submit" className="custom-button">
-              Submit
-            </button>
-          </Link>
+          {/* <Link to={"/partner/searched"}> */}
+          <button
+            onClick={handleUnderConstruction}
+            type="submit"
+            className="custom-button"
+          >
+            Submit
+          </button>
+          {/* </Link> */}
           {/* </form> */}
         </div>
       </div>
