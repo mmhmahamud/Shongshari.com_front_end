@@ -1,7 +1,39 @@
+import { useState } from "react";
 import { useRegisterMutation } from "../../redux/features/auth/authApi";
 
 const RegAsProfessional = () => {
-  const [register, {data, isLoading, isError}] = useRegisterMutation();
+  const [registrationAs, setRegistrationAs] = useState("");
+  const [register, {data: response, isLoading, isError}] = useRegisterMutation();
+  const [gender, setGender] = useState("man");
+  const [lookingFor, setLookingFor] = useState('man');
+  const [accountType, setAccountType]= useState('free')
+
+  const genderHandler = e => {
+    setGender(e.target.value)
+  }
+  const lookingForHandler = (e) => {
+    setLookingFor(e.target.value)
+  }
+  const accountTypeHandler = (e) => {
+    setAccountType(e.target.value)
+  }
+
+
+  const handleRegistration = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const results = Object.fromEntries(data.entries());
+    const formData = {...results, registrationAs }
+    console.log(formData)
+
+   await register(formData);
+   if(response){
+    localStorage.setItem("accessToken", response.accessToken)
+   }
+
+   
+
+  }
   return (
     <div className="main-body">
       <section className="log-reg">
@@ -38,15 +70,11 @@ const RegAsProfessional = () => {
                         <label htmlFor>Registration</label>
                         <div className="option">
                           <div className="s-input nice-select-wraper">
-                            <select
-                              // onChange={handleBlur}
-                              name="role"
-                              className="select-bar o__registerOption"
-                            >
-                              <option>User</option>
-                              <option>Lawyer</option>
-                              <option>Agent</option>
-                              <option>Kazi</option>
+                            <select onChange={(e) => setRegistrationAs(e.target.value)} className="select-bar o__registerOption">
+                              <option value="User">User</option>
+                              <option value="Lawyer">Lawyer</option>
+                              <option value="Agent">Agent</option>
+                              <option value="Kazi">Kazi</option>
                             </select>
                           </div>
                         </div>
@@ -54,7 +82,7 @@ const RegAsProfessional = () => {
                     </div>
                   </div>
                   <div className="main-content">
-                    <form action="#">
+                    <form action="#" onSubmit={handleRegistration}>
                       <h4 className="content-title">Account Details</h4>
                       <div className="row">
                         <div className="form-group col-md-6">
@@ -63,6 +91,7 @@ const RegAsProfessional = () => {
                             // onBlur={handleBlur}
                             name="firstName"
                             type="text"
+                            name="first_name"
                             className="my-form-control"
                             placeholder="Enter Your First Name"
                           />
@@ -73,6 +102,7 @@ const RegAsProfessional = () => {
                             // onBlur={handleBlur}
                             name="lastName"
                             type="text"
+                            name="last_name"
                             className="my-form-control"
                             placeholder="Enter Your Last Name"
                           />
@@ -83,18 +113,14 @@ const RegAsProfessional = () => {
                           <label htmlFor>Registration For*</label>
                           <div className="option">
                             <div className="s-input nice-select-wraper">
-                              <select
-                                // onChange={handleBlur}
-                                name="registerFor"
-                                className="select-bar"
-                              >
-                                <option>Myself</option>
-                                <option>My Brother</option>
-                                <option>My Sister</option>
-                                <option>My Son</option>
-                                <option>My Daughter</option>
-                                <option>My Relative</option>
-                                <option>Friend</option>
+                              <select name="registrationFor" className="select-bar">
+                                <option value="Myself">Myself</option>
+                                <option value="My Brother">My Brother</option>
+                                <option value="My Sister">My Sister</option>
+                                <option value="My Son">My Son</option>
+                                <option value="My Daughter">My Daughter</option>
+                                <option value="My Relative">My Relative</option>
+                                <option value="My Friend">My Friend</option>
                               </select>
                             </div>
                           </div>
@@ -102,9 +128,8 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Ancestry</label>
                           <input
+                            type="text"
                             name="ancestry"
-                            // onBlur={handleBlur}
-                            type="email"
                             className="my-form-control"
                             placeholder="Enter Your Ancestry"
                           />
@@ -115,36 +140,22 @@ const RegAsProfessional = () => {
                           <label htmlFor>Marital Status*</label>
                           <div className="option">
                             <div className="s-input nice-select-wraper">
-                              <select
-                                // onChange={handleBlur}
-                                name="maritalStatus"
-                                className="select-bar"
-                              >
-                                <option>Single</option>
-                                <option>Married</option>
-                                <option>Divorce</option>
+                              <select name="merital_status" className="select-bar">
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Divorce">Divorce</option>
                               </select>
                             </div>
                           </div>
                         </div>
                         <div className="form-group col-md-6">
-                          <label htmlFor>Religion*</label>
-                          <div className="option">
-                            <div className="s-input nice-select-wraper">
-                              <select
-                                // onChange={handleBlur}
-                                name="religion"
-                                className="select-bar"
-                              >
-                                <option>Muslim</option>
-                                <option>Hindu</option>
-                                <option>Christian</option>
-                                <option>Buddhist</option>
-                                <option>Shikh</option>
-                                <option>Others</option>
-                              </select>
-                            </div>
-                          </div>
+                          <label htmlFor>Religion</label>
+                          <input
+                            type="text"
+                            name="religion"
+                            className="my-form-control"
+                            placeholder="Enter Your Religion"
+                          />
                         </div>
                       </div>
                       <div className="row">
@@ -152,31 +163,53 @@ const RegAsProfessional = () => {
                           <label htmlFor>I am a*</label>
                           <div className="option">
                             <div className="s-input mr-3">
-                              <input type="radio" name="gender1" id="males1" />
-                              <label for="males1">Man</label>
+                            <input
+        type="radio"
+        name="gender"
+        value="man"
+        id="man"
+        checked={gender === "man"}
+        onChange={genderHandler}
+      />
+      <label htmlFor="man">Man</label>
                             </div>
                             <div className="s-input">
-                              <input
-                                // onChange={handleBlur}
-                                type="radio"
-                                name="gender1"
-                                id="females1"
-                                value="female"
-                              />
-                              <label for="females1">Woman</label>
+                            <input
+        type="radio"
+        name="gender"
+        value="female"
+        id="female"
+        checked={gender === "female"}
+        onChange={genderHandler}
+      />
+      <label htmlFor="female">Female</label>
                             </div>
                           </div>
                         </div>
                         <div className="form-group col-md-6">
                           <label htmlFor>Looking for a*</label>
                           <div className="option">
-                            <div className="s-input mr-3">
-                              <input type="radio" name="gender2" id="males" />
-                              <label for="males">Man</label>
+                            <div className=" mr-3">
+                            <input
+        type="radio"
+        name="lookingFor"
+        value="man"
+        id="lookingForMan"
+        checked={lookingFor === "man"}
+        onChange={lookingForHandler}
+      />
+      <label htmlFor="lookingForMan">Man</label>
                             </div>
-                            <div className="s-input">
-                              <input type="radio" name="gender2" id="females" />
-                              <label for="females">Woman</label>
+                            <div className="">
+                            <input
+        type="radio"
+        name="lookingFor"
+        value="female"
+        id="lookingForFemale"
+        checked={lookingFor === "female"}
+        onChange={lookingForHandler}
+      />
+      <label htmlFor="lookingForFemale">Female</label>
                             </div>
                           </div>
                         </div>
@@ -186,16 +219,26 @@ const RegAsProfessional = () => {
                           <label htmlFor>Account*</label>
                           <div className="option">
                             <div className="s-input mr-3">
-                              <input type="radio" name="gender3" id="males3" />
-                              <label for="males3">Free Account</label>
+                            <input
+        type="radio"
+        name="accountType"
+        value="free"
+        id="accountTypeFree"
+        checked={accountType === "free"}
+        onChange={accountTypeHandler}
+      />
+      <label htmlFor="accountTypeFree">Free</label>
                             </div>
                             <div className="s-input">
-                              <input
-                                type="radio"
-                                name="gender3"
-                                id="females3"
-                              />
-                              <label for="females3">Premium Account</label>
+                            <input
+        type="radio"
+        name="accountType"
+        value="premium"
+        id="accountTypePremium"
+        checked={accountType === "premium"}
+        onChange={accountTypeHandler}
+      />
+      <label htmlFor="accountTypePremium">Premium Account</label>
                             </div>
                           </div>
                         </div>
@@ -205,6 +248,7 @@ const RegAsProfessional = () => {
                             name='referCode'
                             // onBlur={handleBlur}
                             type="text"
+                            name="refer_code"
                             className="my-form-control"
                             placeholder="Enter Your Refer Code"
                           />
@@ -217,6 +261,7 @@ const RegAsProfessional = () => {
                             name="email"
                             // onBlur={handleBlur}
                             type="email"
+                            name="email"
                             className="my-form-control"
                             placeholder="Enter Your Email"
                           />
@@ -227,6 +272,7 @@ const RegAsProfessional = () => {
                             name="phone"
                             // onBlur={handleBlur}
                             type="text"
+                            name="phone"
                             className="my-form-control"
                             placeholder="Enter Your Phone Number"
                           />
@@ -239,6 +285,7 @@ const RegAsProfessional = () => {
                             name="password"
                             // onBlur={handleBlur}
                             type="text"
+                            name="password"
                             className="my-form-control"
                             placeholder="Enter Your Password"
                           />
@@ -249,18 +296,13 @@ const RegAsProfessional = () => {
                             name="confirmPassword"
                             // onBlur={handleBlur}
                             type="text"
+                            name="confirm_password"
                             className="my-form-control"
                             placeholder="Enter Your Password"
                           />
                         </div>
                       </div>
-                      <button
-                        className="custom-button"
-                        data-toggle="modal"
-                        data-target="#email-confirm"
-                      >
-                        Create Your Profile
-                      </button>
+                      <input type="submit" value="CREATE YOUR PROFILE" className="custom-button" />
                     </form>
                   </div>
                 </div>
