@@ -39,7 +39,7 @@ const RegAsProfessional = () => {
                         <div className="option">
                           <div className="s-input nice-select-wraper">
                             <select
-                              onChange={handleBlur}
+                              // onChange={handleBlur}
                               name="role"
                               className="select-bar o__registerOption"
                             >
@@ -60,7 +60,7 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>First Name*</label>
                           <input
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             name="firstName"
                             type="text"
                             className="my-form-control"
@@ -70,7 +70,7 @@ const RegAsProfessional = () => {
                         <div className="form-group col-md-6">
                           <label htmlFor>Last Name*</label>
                           <input
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             name="lastName"
                             type="text"
                             className="my-form-control"
@@ -84,7 +84,7 @@ const RegAsProfessional = () => {
                           <div className="option">
                             <div className="s-input nice-select-wraper">
                               <select
-                                onChange={handleBlur}
+                                // onChange={handleBlur}
                                 name="registerFor"
                                 className="select-bar"
                               >
@@ -103,7 +103,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Ancestry</label>
                           <input
                             name="ancestry"
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="email"
                             className="my-form-control"
                             placeholder="Enter Your Ancestry"
@@ -116,7 +116,7 @@ const RegAsProfessional = () => {
                           <div className="option">
                             <div className="s-input nice-select-wraper">
                               <select
-                                onChange={handleBlur}
+                                // onChange={handleBlur}
                                 name="maritalStatus"
                                 className="select-bar"
                               >
@@ -132,7 +132,7 @@ const RegAsProfessional = () => {
                           <div className="option">
                             <div className="s-input nice-select-wraper">
                               <select
-                                onChange={handleBlur}
+                                // onChange={handleBlur}
                                 name="religion"
                                 className="select-bar"
                               >
@@ -157,7 +157,7 @@ const RegAsProfessional = () => {
                             </div>
                             <div className="s-input">
                               <input
-                                onChange={handleBlur}
+                                // onChange={handleBlur}
                                 type="radio"
                                 name="gender1"
                                 id="females1"
@@ -203,7 +203,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Use Refer Code</label>
                           <input
                             name='referCode'
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Refer Code"
@@ -215,7 +215,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Email*</label>
                           <input
                             name="email"
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="email"
                             className="my-form-control"
                             placeholder="Enter Your Email"
@@ -225,7 +225,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Phone*</label>
                           <input
                             name="phone"
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Phone Number"
@@ -237,7 +237,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Password*</label>
                           <input
                             name="password"
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Password"
@@ -247,7 +247,7 @@ const RegAsProfessional = () => {
                           <label htmlFor>Confirm Password*</label>
                           <input
                             name="confirmPassword"
-                            onBlur={handleBlur}
+                            // onBlur={handleBlur}
                             type="text"
                             className="my-form-control"
                             placeholder="Enter Your Password"
