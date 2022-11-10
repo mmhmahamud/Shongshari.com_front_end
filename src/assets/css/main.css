@@ -1854,6 +1854,7 @@ input[type="submit"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .header-wrapper .logo {
@@ -11738,7 +11739,7 @@ input[type="submit"] {
   color: white !important;
 }
 
-.top-profile-header{
+.top-profile-header {
   padding-top: 110px;
 }
 

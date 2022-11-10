@@ -69,14 +69,12 @@ function Header() {
           <div className="row">
             <div className="col-lg-12">
               <div className="header-wrapper">
-                <div className="logo">
+                <div className="header__iconWrpr">
                   <Link to={"/"}>
                     <img className="black__logo" src={blackLogo} alt="logo" />
-                    <img className="white__logo" src={white__logo} alt="logo" />
+                    {/* <img className="white__logo" src={white__logo} alt="logo" /> */}
                   </Link>
-                </div>
 
-                <div className="header__iconWrpr">
                   <ul className={isActive ? "menu active" : "menu"}>
                     <li>
                       <Link to={"/partner"}>
