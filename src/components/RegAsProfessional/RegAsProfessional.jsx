@@ -1,4 +1,7 @@
+import { useRegisterMutation } from "../../redux/features/auth/authApi";
+
 const RegAsProfessional = () => {
+  const [register, {data, isLoading, isError}] = useRegisterMutation();
   return (
     <div className="main-body">
       <section className="log-reg">
