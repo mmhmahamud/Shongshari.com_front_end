@@ -19,7 +19,7 @@ function Agent() {
   );
   return (
     <div className="main-body">
-      <CommonHeaderLayout name={"Agent"} />
+      {/* <CommonHeaderLayout name={"Agent"} /> */}
       <AgentBody />
     </div>
   );

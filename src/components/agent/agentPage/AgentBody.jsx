@@ -5,11 +5,12 @@ import AgentTabs from "./AgentTabs";
 function AgentBody() {
   return (
     <section className="findPartner banner-section">
+      <h1 className="d-flex justify-content-center">The page is under construction...</h1>
       <div className="container">
         <div className="row">
-          <Filter />
+          {/* <Filter /> */}
           {/* <AgentTabs/> */}
-          <MainTabLayout module={"agent"} />
+          {/* <MainTabLayout module={"agent"} /> */}
         </div>
       </div>
     </section>

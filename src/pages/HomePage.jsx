@@ -26,6 +26,7 @@ function HomePage() {
 
 	const dispatch = useDispatch();
 
+
 	useEffect(() => {
 		dispatch(blogListAction());
 	}, []);
@@ -37,19 +38,19 @@ function HomePage() {
 					<FlirtingSection />
 					<MemberSection />
 					<TopProfile />
-					<SuccessStories />
+					{/* <SuccessStories /> */}
 					<PeopleAlreadyJoin />
 
-					<ProductsPageHomeSlider />
+					{/* <ProductsPageHomeSlider /> */}
 
 					<HowDoesItWorks />
-					<TopHiring />
-					<TopStatus />
+					{/* <TopHiring /> */}
+					{/* <TopStatus /> */}
 					<Soulmate />
-					<CourseHome />
+					{/* <CourseHome /> */}
 					<Membership />
 					<AmazingFeatures />
-					<Experts />
+					{/* <Experts /> */}
 				</MainLayout>
 			</div>
 		</>

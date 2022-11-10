@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import { useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { Autoplay, Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,6 +45,7 @@ const Blog = () => {
   };
 
   useEffect(() => {
+    toast.warning('This page is Under Construction')
     dispatch(blogListAction());
   }, []);
 
@@ -93,7 +95,7 @@ const Blog = () => {
         <div className="post-footer post-footer2">
           <div className="left">
             <p>
-              <b>Category</b> Dating Advice
+              <b>Category</b> Life partner Advice
             </p>
           </div>
           <div className="right">
@@ -154,7 +156,7 @@ const Blog = () => {
           <div className="post-footer post-footer2">
             <div className="left">
               <p>
-                <b>Category</b> Dating Advice
+                <b>Category</b> Life partner Advice
               </p>
             </div>
             <div className="right">
@@ -177,7 +179,9 @@ const Blog = () => {
             <div className="col-lg-8">
               <div className="row">
                 <InfiniteScroll
-                  dataLength={blogsData?.data?.length?blogsData?.data?.length:0}
+                  dataLength={
+                    blogsData?.data?.length ? blogsData?.data?.length : 0
+                  }
                   next={10}
                   hasMore={true}
                   loader={<h4>Loading...</h4>}
