@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import shape1 from "../../assets/img/footer/f-shape.png";
 import shape2 from "../../assets/img/footer/flower01.png";
 import nIcon from "../../assets/img/footer/n-icon.png";
 import shape3 from "../../assets/img/footer/right-shape.png";
 
+
+
 function Footer() {
+
+  const handlePopUp = () => {
+    toast.warning('Under construction')
+  }
   return (
     <footer className="footer-section mt-3">
       <div className="ocean">
@@ -62,19 +69,19 @@ function Footer() {
                       <i className="fas fa-angle-double-right"></i> Contact Us
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Customer
                       Reviews
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Success
                       Stories
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Business
                       License
@@ -87,30 +94,30 @@ function Footer() {
               <div className="link-wrapper two">
                 <h4 className="f-l-title">My Account</h4>
                 <ul className="f-solial-links">
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Manage
                       Account
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Safety Tips
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Account
                       Varification
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Safety &
                       Security
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Membership
                       Level
@@ -123,28 +130,28 @@ function Footer() {
               <div className="link-wrapper three">
                 <h4 className="f-l-title">help center</h4>
                 <ul className="f-solial-links">
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Help centre
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> FAQ
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i>Quick Start
                       Guide
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i>Tutorials
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i>Associate
                       Blog
@@ -163,13 +170,13 @@ function Footer() {
                       policy
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> End User
                       Agreements
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Refund
                       Policy
@@ -181,7 +188,7 @@ function Footer() {
                       policy
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Report abuse
                     </Link>
