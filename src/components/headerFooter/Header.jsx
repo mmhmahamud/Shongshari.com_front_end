@@ -2,16 +2,19 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import cart from "../../assets/img/icon/LogoMakr-02OEp4.png";
-import lawyer from "../../assets/img/icon/LogoMakr-551CtA.png";
-import findPartner from "../../assets/img/icon/LogoMakr-6mV6Vg.png";
-import course from "../../assets/img/icon/LogoMakr-7d7yhl.png";
-import shop from "../../assets/img/icon/LogoMakr-7rdF2C.png";
+import lawyer from "../../assets/img/icon/Lawyer.svg";
+import findPartner from "../../assets/img/icon/Find Your Partner.svg";
+import course from "../../assets/img/icon/Online Course.svg";
+import shop from "../../assets/img/icon/Shop.svg";
 import membership from "../../assets/img/icon/LogoMakr-7XW4Bl.png";
-import blog from "../../assets/img/icon/LogoMakr-8HQa8v.png";
+import blog from "../../assets/img/icon/Blog.svg";
 import {
-  default as kaziAgent,
-  default as register,
+  default as agentProfile,
+  // default as register,
 } from "../../assets/img/icon/LogoMakr-9dyVlR.png";
+import kazi from "../../assets/img/icon/Kazi.svg";
+// import Agent from "../../assets/img/icon/Agent.svg";
+import register from "../../assets/img/icon/Profile Login Icon.svg";
 import blackLogo from "../../assets/img/logo/Frame 5.png";
 import white__logo from "../../assets/img/logo/Frame 6.png";
 import RegisterModal from "../modal/RegisterModal";
@@ -156,22 +159,44 @@ function Header() {
                         <span className="tooltip__o">Find a lawyer</span>
                       </Link>
                     </li>
-                    <li
+                    <li>
+                      <Link to={"/kazi"}>
+                        <img
+                          src={kazi}
+                          alt=""
+                          srcSet=""
+                          className="img-fluid"
+                        />
+                        <span className="tooltip__o">Kazi</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/agent"}>
+                        <img
+                          src={agentProfile}
+                          alt=""
+                          srcSet=""
+                          className="img-fluid"
+                        />
+                        <span className="tooltip__o">Agent</span>
+                      </Link>
+                    </li>
+                    {/* <li
                       id="tooltipText"
                       className="user-profile d-flex header__login header__login2"
                     >
                       <img src={kaziAgent} alt="img" />
                       <span className="tooltip__o tooltip__02">
-                        <Link to={"/kazi"}>Kazi</Link>
-                        <Link to={"/agent"}>Agent</Link>
+                        <Link to={""}></Link>
+                        <Link to={""}></Link>
                       </span>
-                    </li>
+                    </li> */}
                   </ul>
                   <ul className={isActive ? "menu active" : "menu"}>
                     {authenticated ? (
                       <li id="tooltipText" className="user-profile d-flex">
                         <Link to={`/profile/info/${currentUser.id}`}>
-                          <img src={register} alt="img" />
+                          <img className="user-profile-login-icon" src={register} alt="img" />
                         </Link>
 
                         <span
@@ -186,16 +211,15 @@ function Header() {
                         id="tooltipText"
                         className="user-profile d-flex header__login"
                       >
-                        <img src={register} alt="img" />
+                        <img className="user-profile-login-icon" src={register} alt="img" />
                         <span className="tooltip__o tooltip__02">
                           <Link to="/login">login</Link>
-                          <a onClick={() => handleRegShow()}>
+                          {/* <a onClick={() => handleRegShow()}>
                             Register as Member
                           </a>
-
                           <Link to="/regAsProfessional">
                             Register as a Professional
-                          </Link>
+                          </Link> */}
                         </span>
                       </li>
                     )}
