@@ -1,15 +1,7 @@
-import { useState } from "react";
+import { useRegisterMutation } from "../../redux/features/auth/authApi";
 
 const RegAsProfessional = () => {
-  const [userInfo, setUserInfo] = useState({});
-
-  //setting data on
-  const handleBlur = (e) => {
-    let newUserInfo = { ...userInfo };
-    newUserInfo[e.target.name] = e.target.value;
-    setUserInfo(newUserInfo);
-  };
-  console.log(userInfo);
+  const [register, {data, isLoading, isError}] = useRegisterMutation();
   return (
     <div className="main-body">
       <section className="log-reg">
