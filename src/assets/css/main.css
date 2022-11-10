@@ -3590,7 +3590,7 @@ input[type="submit"] {
 
 /* latest-registered-section Starts Here */
 .latest-registered-section {
-  padding: 80px 0px 80px;
+  padding: 30px 0px 30px;
   background: #5736cb;
   position: relative;
   overflow: hidden;
@@ -11738,6 +11738,10 @@ input[type="submit"] {
   color: white !important;
 }
 
+.top-profile-header{
+  padding-top: 110px;
+}
+
 .top-slider-section .top-profile-header h4 {
   color: #ff317b;
   font-size: 50px;
@@ -12443,4 +12447,10 @@ h3 {
   border-radius: 5px;
   /* background: #80808045; */
   padding: 9px;
+}
+
+/* slide style  */
+
+.slick-arrow {
+  display: none !important;
 }

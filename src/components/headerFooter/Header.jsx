@@ -189,11 +189,17 @@ function Header() {
                         <img src={register} alt="img" />
                         <span className="tooltip__o tooltip__02">
                           <Link to="/login">login</Link>
-                          <a onClick={() => handleRegShow()}>
+                          <a
+                            style={{ display: "none" }}
+                            onClick={() => handleRegShow()}
+                          >
                             Register as Member
                           </a>
 
-                          <Link to="/regAsProfessional">
+                          <Link
+                            style={{ display: "none" }}
+                            to="/regAsProfessional"
+                          >
                             Register as a Professional
                           </Link>
                         </span>
