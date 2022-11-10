@@ -1,8 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import kateBrunch from "../../../assets/img/registered/pexels-kate-branch-8365152.jpg";
 function WithoutLoginSuggested() {
+
+  const handlePopUp = () => {
+    toast.warning('Under construction')
+  };
+
   return (
     <div className="collapse show">
       <div className="top-div text-center">
@@ -535,9 +542,9 @@ function WithoutLoginSuggested() {
           </Swiper>
         </div>
 
-        <a id="member__btn" className="btn" href="#">
+        <Link id="member__btn" onClick={handlePopUp} className="btn" href="#">
           See More
-        </a>
+        </Link>
       </div>
     </div>
   );

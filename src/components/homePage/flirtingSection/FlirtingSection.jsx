@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import circle from "../../../assets/img/circle.png";
 import icon1 from "../../../assets/img/icon01.png";
 import icon2 from "../../../assets/img/icon02.png";
@@ -7,6 +9,11 @@ import icon4 from "../../../assets/img/icon04.png";
 import illutration from "../../../assets/img/illutration.png";
 import ThreeEasySteps from "./ThreeEasySteps";
 function FlirtingSection() {
+
+  const handlePopUp = () => {
+    toast.warning('Under construction')
+  }
+
   return (
     <div>
       <ThreeEasySteps />
@@ -85,9 +92,9 @@ function FlirtingSection() {
                   which presents you thousands of users through your smartphone
                   in a very pleasant experience.
                 </p>
-                <a href="#" className="custom-button mt-2">
+                <Link className="custom-button mt-2" onClick={handlePopUp} >
                   Seek Your Partner
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6 mt-3 mt-lg-0">

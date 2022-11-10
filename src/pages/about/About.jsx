@@ -21,10 +21,10 @@ import heartshape from './../../assets/img/join/heartshape.png'
 import cover from './../../assets/img/join/img.png'
 
 const About = () => {
-    return (
-        <div>
-            <Header />
-            <div>
+  return (
+    <div>
+      <Header />
+      <div>
         <section className="flirting-section about-section">
           <div className="container">
             <div className="row">
@@ -47,8 +47,8 @@ const About = () => {
                     </p>
                     <br />
                     <p className="mb-0">
-                      As a result, the customer service desk recommends that 
-                      customers should consider contacting them via their website. We realize that it’s not a simple task to understand what options you have when it comes to contact with their help desk. We, 
+                      As a result, the customer service desk recommends that
+                      customers should consider contacting them via their website. We realize that it’s not a simple task to understand what options you have when it comes to contact with their help desk. We,
                       therefore, find it helpful if we share some of our research work with you.
                     </p>
                   </div>
@@ -73,7 +73,7 @@ const About = () => {
                     </h2>
                     <p>
                       There are lots of online dating sites available which makes it difficult
-                      to choose the one which can give you a serious partner.... 
+                      to choose the one which can give you a serious partner....
                     </p>
                   </div>
                 </div>
@@ -247,7 +247,7 @@ const About = () => {
                   <div className="section-header white-color">
                     <h2 className="title">
                       Best Ways to Find Your
-                      True Sole Mate 
+                      True Sole Mate
                     </h2>
                   </div>
                   <a href="#" className="custom-button">Join Now !</a>
@@ -336,7 +336,7 @@ const About = () => {
                       <span />
                     </div>
                     <h4 className="title">
-                      ‘love at first sight’ is all 
+                      ‘love at first sight’ is all
                       about initial attraction...
                     </h4>
                     <p className="date">
@@ -382,7 +382,7 @@ const About = () => {
                       <span />
                     </div>
                     <h4 className="title">
-                      What women actually 
+                      What women actually
                       want to feel on their...
                     </h4>
                     <p className="date">
@@ -421,9 +421,9 @@ const About = () => {
           </div>
         </section>
       </div>
-            <Footer />
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 };
 
 export default About;

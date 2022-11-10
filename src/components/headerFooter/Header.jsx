@@ -15,6 +15,8 @@ import {
 import kazi from "../../assets/img/icon/Kazi.svg";
 // import Agent from "../../assets/img/icon/Agent.svg";
 import register from "../../assets/img/icon/Profile Login Icon.svg";
+import languageBangla from "../../assets/img/icon/Language Switcher Bangla.svg";
+import languageEnglish from "../../assets/img/icon/Language Switcher English.svg";
 import blackLogo from "../../assets/img/logo/Frame 5.png";
 import white__logo from "../../assets/img/logo/Frame 6.png";
 import RegisterModal from "../modal/RegisterModal";
@@ -137,7 +139,7 @@ function Header() {
                         <span className="tooltip__o">Course</span>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to={"/shop"}>
                         <img
                           src={shop}
@@ -147,7 +149,7 @@ function Header() {
                         />
                         <span className="tooltip__o">Shop</span>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to={"/lawyer"}>
                         <img
