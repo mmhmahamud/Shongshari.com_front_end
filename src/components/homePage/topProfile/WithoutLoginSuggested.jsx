@@ -49,7 +49,7 @@ function WithoutLoginSuggested() {
                       <span style={{ color: "#ff337c" }}>{item.age}</span>
                     </h4>
                     <span>{item.profession}</span>
-                    <p>{item?.address}</p>
+                    <p>{item.address}</p>
                   </div>
                   <div className="info__cardUp">
                     <div className="info__cardImg">
@@ -62,17 +62,17 @@ function WithoutLoginSuggested() {
                     <ul>
                       <li>
                         <p>
-                          <span>Occupation</span> Lorem, ipsum dolor.
+                          <span>Occupation</span> {item.profession}
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span>Location</span> {item?.address}
+                          <span>Location</span> {item.address}
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span>Home Town</span> Dhaka
+                          <span>Home Town</span> Dhake
                         </p>
                       </li>
                       <li>

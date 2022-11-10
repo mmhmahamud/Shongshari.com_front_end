@@ -70,20 +70,20 @@ function FlirtingSection() {
                 data-wow-delay="0.5s"
               >
                 <h6>Meet New People Today!</h6>
-                <h2>Start Flirting</h2>
+                <h2>Start Family</h2>
                 <p>
-                  In our modern day and age dating apps have become an integral
-                  part of our lives. They allow you to check the profile of
-                  singles living near you, to chat with them, to meet them and
-                  maybe to fall in love.
+                  In our modern day and age Life partner apps have become an
+                  integral part of our lives. They allow you to check the
+                  profile of singles living near you, to chat with them, to meet
+                  them and maybe to fall in love.
                 </p>
                 <br />
                 <p>
-                  If you’re searching for a simple dating app with free features
-                  allowing to meet singles, you’re in good hands with Pairko.
-                  With Pairko you get all you need from a mobile dating app,
-                  which presents you thousands of users through your smartphone
-                  in a very pleasant experience.
+                  If you’re searching for a simple Life partner app with free
+                  features allowing to meet singles, you’re in good hands with
+                  Pairko. With Pairko you get all you need from a mobile Life
+                  partner app, which presents you thousands of users through
+                  your smartphone in a very pleasant experience.
                 </p>
                 <a href="#" className="custom-button mt-2">
                   Seek Your Partner

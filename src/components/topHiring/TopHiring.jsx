@@ -77,7 +77,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -88,7 +88,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -131,7 +131,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -142,7 +142,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -186,7 +186,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -197,7 +197,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -240,7 +240,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -251,7 +251,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -294,7 +294,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -305,7 +305,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -348,7 +348,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -359,7 +359,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -402,7 +402,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -413,7 +413,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -456,7 +456,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -467,7 +467,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-sora-shimazaki-5673465.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -510,7 +510,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -521,7 +521,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -576,7 +576,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -587,7 +587,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -630,7 +630,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -641,7 +641,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -684,7 +684,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -695,7 +695,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -738,7 +738,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -749,7 +749,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -792,7 +792,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -803,7 +803,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -846,7 +846,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -857,7 +857,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -900,7 +900,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -911,7 +911,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -954,7 +954,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -965,7 +965,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1008,7 +1008,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1019,7 +1019,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-kate-branch-8365152.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1074,7 +1074,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1085,7 +1085,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1128,7 +1128,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1139,7 +1139,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1182,7 +1182,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1193,7 +1193,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1236,7 +1236,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1247,7 +1247,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1290,7 +1290,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2 ">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1301,7 +1301,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1344,7 +1344,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1355,7 +1355,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1398,7 +1398,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1409,7 +1409,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1452,7 +1452,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1463,7 +1463,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>
@@ -1506,7 +1506,7 @@ function TopHiring() {
                                             </div>
                                             <div className="inner-content inner__contentSlide inner__contentSlide2">
                                                 <h4 className="name name2">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <span>Model</span>
@@ -1517,7 +1517,7 @@ function TopHiring() {
                                                     <img src="/assets/images/registered/pexels-andrea-piacquadio-3760514.jpg" alt="card__img">
                                                 </div>
                                                 <h4 style="color:white;" className="name">
-                                                    Rifat Ara
+                                                    Sajia Jahan Rakha
                                                     <span>24</span>
                                                 </h4>
                                                 <ul>

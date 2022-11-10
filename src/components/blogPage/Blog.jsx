@@ -93,7 +93,7 @@ const Blog = () => {
         <div className="post-footer post-footer2">
           <div className="left">
             <p>
-              <b>Category</b> Dating Advice
+              <b>Category</b> Life partner Advice
             </p>
           </div>
           <div className="right">
@@ -154,7 +154,7 @@ const Blog = () => {
           <div className="post-footer post-footer2">
             <div className="left">
               <p>
-                <b>Category</b> Dating Advice
+                <b>Category</b> Life partner Advice
               </p>
             </div>
             <div className="right">
@@ -177,7 +177,9 @@ const Blog = () => {
             <div className="col-lg-8">
               <div className="row">
                 <InfiniteScroll
-                  dataLength={blogsData?.data?.length?blogsData?.data?.length:0}
+                  dataLength={
+                    blogsData?.data?.length ? blogsData?.data?.length : 0
+                  }
                   next={10}
                   hasMore={true}
                   loader={<h4>Loading...</h4>}

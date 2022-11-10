@@ -8,7 +8,7 @@ const TopPartner = () => {
           </div>
           <div className="inner-content inner__contentSlide">
             <h4 className="name">
-              Rifat Ara
+              Sajia Jahan Rakha
               <span style={{ color: "#ff337c" }}>24</span>
             </h4>
             <span>Model</span>
@@ -19,7 +19,7 @@ const TopPartner = () => {
               {/* <img src={pexels} alt="" /> */}
             </div>
             <h4 style={{ color: "white" }} className="name">
-              Rifat Ara
+              Sajia Jahan Rakha
               <span>24</span>
             </h4>
             <ul>
