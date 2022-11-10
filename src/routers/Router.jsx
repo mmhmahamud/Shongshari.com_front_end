@@ -37,6 +37,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsConditions/TermsConditions";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
+import SingleProfiles from "../pages/singleProfile/SingleProfiles";
 // import ProductPage from "../pages/product/ProductPageductPage";
 
 function Router() {
@@ -52,22 +53,22 @@ function Router() {
     typeNow == 1
       ? "profile"
       : typeNow == 2
-        ? "/lawyer-profile"
-        : typeNow == 3
-          ? "kazi-profile"
-          : typeNow == 6
-            ? "agent-profile"
-            : "";
+      ? "/lawyer-profile"
+      : typeNow == 3
+      ? "kazi-profile"
+      : typeNow == 6
+      ? "agent-profile"
+      : "";
   const userData = () => {
     const access_token = getToken();
     // console.log("route", route);
 
     return getToken() && route
       ? axios.get(route, {
-        headers: {
-          Authorization: `Bearer ${access_token}`,
-        },
-      })
+          headers: {
+            Authorization: `Bearer ${access_token}`,
+          },
+        })
       : Promise.resolve(null);
   };
 
@@ -102,8 +103,11 @@ function Router() {
   ) : (
     <BrowserRouter>
       <Routes>
+        <Route path="/single-profiles" element={<SingleProfiles />} />
+
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginModal />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />

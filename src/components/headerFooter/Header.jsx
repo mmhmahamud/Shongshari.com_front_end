@@ -72,7 +72,7 @@ function Header() {
                 <div className="header__iconWrpr">
                   <Link to={"/"}>
                     <img className="black__logo" src={blackLogo} alt="logo" />
-                    {/* <img className="white__logo" src={white__logo} alt="logo" /> */}
+                    <img className="white__logo" src={white__logo} alt="logo" />
                   </Link>
 
                   <ul className={isActive ? "menu active" : "menu"}>
