@@ -69,8 +69,8 @@ function FlirtingSection() {
                 className="flirting__content wow fadeInUp"
                 data-wow-delay="0.5s"
               >
-                <h6>Meet New People Today!</h6>
-                <h2>Start Family</h2>
+                <h6>Meet Your Perfect Life Partner!</h6>
+                <h2>Begain Family Journey</h2>
                 <p>
                   In our modern day and age Life partner apps have become an
                   integral part of our lives. They allow you to check the

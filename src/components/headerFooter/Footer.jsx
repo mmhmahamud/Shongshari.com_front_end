@@ -209,19 +209,19 @@ function Footer() {
             <div className="col-lg-6">
               <ul className="footer-social-links">
                 <li>
-                  <Link to="/">
+                  <a href="www.facebook.com/shongsharibd">
                     <i className="fab fa-facebook-f"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/">
+                  <a href="/instagram.com/shongshari_">
                     <i className="fab fa-instagram"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/">
+                  <a href="/www.shongshari.com">
                     <i className="fab fa-dribbble"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

@@ -46,7 +46,12 @@ function WithoutLoginSuggested() {
                   <div className="inner-content inner__contentSlide">
                     <h4 className="name">
                       {item.name}
-                      <span style={{ color: "#ff337c" }}>{item.age}</span>
+                      {item.gender === "f" && (
+                        <span style={{ color: "#ff337c" }}> {item.age}</span>
+                      )}
+                      {item.gender === "m" && (
+                        <span style={{ color: "#87CEEB" }}> {item.age}</span>
+                      )}
                     </h4>
                     <span>{item.profession}</span>
                     <p>{item.address}</p>
@@ -57,7 +62,12 @@ function WithoutLoginSuggested() {
                     </div>
                     <h4 style={{ color: "white" }} className="name">
                       {item.name}
-                      <span>{item.age}</span>
+                      {item.gender === "f" && (
+                        <span style={{ color: "#ff337c" }}> {item.age}</span>
+                      )}
+                      {item.gender === "m" && (
+                        <span style={{ color: "#87CEEB" }}> {item.age}</span>
+                      )}
                     </h4>
                     <ul>
                       <li>

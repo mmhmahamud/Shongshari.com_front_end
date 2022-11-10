@@ -18,6 +18,7 @@ const dummyData = [
     father: " Md. Kamal Khan",
     mother: "Salma Begum",
     address: "Barishal Sahadar Barishal",
+    gender: 'f'
   },
   {
     name: "Md. Sahriar Saiful",
@@ -28,7 +29,8 @@ const dummyData = [
     institution: "Dhaka college",
     father: "Md. Manik Khan",
       mother: "Anjira Begum",
-    img: shahriar
+    img: shahriar,
+    gender: 'm'
   },
   {
     name: "Md. Shakil Mridha",
@@ -40,7 +42,8 @@ const dummyData = [
     father: "Md. Nasir Mridha",
     mother: "Shirin Akter",
     address: "barishal sadar, charaicha, kornokathi",
-    img: shakil
+    img: shakil,
+    gender: 'm'
   },
   {
     name: "Md. Tohidul islam shohag",
@@ -52,7 +55,8 @@ const dummyData = [
     father: "Md. Babul Mridha",
     mother: "Soniya begum",
     address: "Barishal shadar, Barishal",
-    img: tuhidul
+    img: tuhidul,
+    gender: 'm'
   },
   {
     name: " Tumpa Akter Sathi",
@@ -64,7 +68,8 @@ const dummyData = [
     father: "Md. Moshiur Rahman",
     mother: "Moyna Begum",
     address: "Patuakhali,  Sobuj bag.",
-    img:tumpa
+    img:tumpa,
+    gender: 'f'
   },
   {
     name: " Sah Ali isalam",
@@ -76,7 +81,8 @@ const dummyData = [
     father: "Md. Manik Miya",
     mother: "Tara Begum",
     address: "Zatrabari Dhaka",
-    img: ali
+    img: ali,
+    gender: 'm'
   },
   {
     name: "Nowrin Meem",
@@ -88,7 +94,8 @@ const dummyData = [
     father: "Md. Badruzzaman",
     mother: "Runa jahan",
     address: "Chadpur, Matlab",
-    img: meem
+    img: meem,
+    gender: 'f'
   },
 ];
 
