@@ -1,4 +1,4 @@
-import ali from './dummyImg/ali.png'
+import ali from "./dummyImg/ali.png";
 import meem from "./dummyImg/meem.png";
 import sanjida from "./dummyImg/sanjida.png";
 import shahriar from "./dummyImg/shahriar.png";
@@ -8,8 +8,9 @@ import tumpa from "./dummyImg/tumpa.png";
 
 const dummyData = [
   {
-        name: "Sajia Jahan Rakha",
-      img:sanjida,
+    id: 1,
+    name: "Sajia Jahan Rakha",
+    img: sanjida,
     age: 22,
     hight: "5 feet 4",
     profession: "Student",
@@ -18,9 +19,10 @@ const dummyData = [
     father: " Md. Kamal Khan",
     mother: "Salma Begum",
     address: "Barishal Sahadar Barishal",
-    gender: 'f'
+    gender: "f",
   },
   {
+    id: 2,
     name: "Md. Sahriar Saiful",
     age: 26,
     hight: "5 feet 6",
@@ -28,11 +30,12 @@ const dummyData = [
     education: "Hon’s ( deparment of physics )",
     institution: "Dhaka college",
     father: "Md. Manik Khan",
-      mother: "Anjira Begum",
+    mother: "Anjira Begum",
     img: shahriar,
-    gender: 'm'
+    gender: "m",
   },
   {
+    id: 3,
     name: "Md. Shakil Mridha",
     age: 26,
     hight: "5 feet 5",
@@ -43,9 +46,10 @@ const dummyData = [
     mother: "Shirin Akter",
     address: "barishal sadar, charaicha, kornokathi",
     img: shakil,
-    gender: 'm'
+    gender: "m",
   },
   {
+    id: 4,
     name: "Md. Tohidul islam",
     age: 27,
     hight: "5 feet 6",
@@ -56,9 +60,10 @@ const dummyData = [
     mother: "Soniya begum",
     address: "Barishal shadar, Barishal",
     img: tuhidul,
-    gender: 'm'
+    gender: "m",
   },
   {
+    id: 5,
     name: " Tumpa Akter Sathi",
     age: 22,
     hight: "5 feet 4",
@@ -68,10 +73,11 @@ const dummyData = [
     father: "Md. Moshiur Rahman",
     mother: "Moyna Begum",
     address: "Patuakhali,  Sobuj bag.",
-    img:tumpa,
-    gender: 'f'
+    img: tumpa,
+    gender: "f",
   },
   {
+    id: 6,
     name: " Sah Ali isalam",
     age: 26,
     hight: "5 feet 6",
@@ -82,9 +88,10 @@ const dummyData = [
     mother: "Tara Begum",
     address: "Zatrabari Dhaka",
     img: ali,
-    gender: 'm'
+    gender: "m",
   },
   {
+    id: 7,
     name: "Nowrin Meem",
     age: 21,
     hight: "5 feet 5",
@@ -95,7 +102,7 @@ const dummyData = [
     mother: "Runa jahan",
     address: "Chadpur, Matlab",
     img: meem,
-    gender: 'f'
+    gender: "f",
   },
 ];
 
