@@ -228,7 +228,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="www.shongshari.com" onClick={()=>toast.warning("Under Construction")}>
+                  <a href="ffffffff" onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-dribbble"></i>
                   </a>
                 </li>
