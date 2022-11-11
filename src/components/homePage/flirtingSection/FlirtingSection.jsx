@@ -76,21 +76,20 @@ function FlirtingSection() {
                 className="flirting__content wow fadeInUp"
                 data-wow-delay="0.5s"
               >
-                <h6>Meet New People Today!</h6>
-                <h2>Start Flirting</h2>
+                <h6>Meet Your Perfect Life Partner!</h6>
+                <h2>Begain Family Journey</h2>
                 <p>
-                  In our modern day and age dating apps have become an integral
-                  part of our lives. They allow you to check the profile of
-                  singles living near you, to chat with them, to meet them and
-                  maybe to fall in love.
+                  Shongshari.com is the ultimate Matchmaking, Matrimony, and
+                  Family Management platform in Bangladesh. We are working to
+                  achieve a simple objective - to help people find happiness.
                 </p>
                 <br />
                 <p>
-                  If you’re searching for a simple dating app with free features
-                  allowing to meet singles, you’re in good hands with Pairko.
-                  With Pairko you get all you need from a mobile dating app,
-                  which presents you thousands of users through your smartphone
-                  in a very pleasant experience.
+                  Shongshari.com - a trusted matrimonial & matchmaking service,
+                  has always differentiated itself from other matrimonials
+                  through its innovation-led approach not only by redefining the
+                  way Bangladeshi brides and grooms meet for marriage, but also
+                  maintain and make their family journey smoother!
                 </p>
                 <Link className="custom-button mt-2" onClick={handlePopUp} >
                   Seek Your Partner

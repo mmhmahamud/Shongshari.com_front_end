@@ -1,22 +1,18 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import {
+  default as agentProfile
+} from "../../assets/images/menuicon/Agent.svg";
+import blog from "../../assets/images/menuicon/Blog.svg";
+import findPartner from "../../assets/images/menuicon/Find Your Partner.svg";
+import kazi from "../../assets/images/menuicon/Kazi.svg";
+import lawyer from "../../assets/images/menuicon/Lawyer.svg";
+import membership from "../../assets/images/menuicon/Membership.svg";
+import course from "../../assets/images/menuicon/Online Course.svg";
 import cart from "../../assets/img/icon/LogoMakr-02OEp4.png";
-import lawyer from "../../assets/img/icon/Lawyer.svg";
-import findPartner from "../../assets/img/icon/Find Your Partner.svg";
-import course from "../../assets/img/icon/Online Course.svg";
-import shop from "../../assets/img/icon/Shop.svg";
-import membership from "../../assets/img/icon/Membership.svg";
-import blog from "../../assets/img/icon/Blog.svg";
-// import {
-//   default as agentProfile,
-//   default as register,
-// } from "../../assets/img/icon/LogoMakr-9dyVlR.png";
-import kazi from "../../assets/img/icon/Kazi.svg";
-import AgentIcon from "../../assets/img/icon/Agent.svg";
-import register from "../../assets/img/icon/Profile Login Icon.svg";
-import languageBangla from "../../assets/img/icon/Language Switcher Bangla.svg";
-import languageEnglish from "../../assets/img/icon/Language Switcher English.svg";
+// import Agent from "../../assets/img/icon/Agent.svg";
+import register from "../../assets/images/menuicon/Profile Login Icon.svg";
 import blackLogo from "../../assets/img/logo/Frame 5.png";
 import white__logo from "../../assets/img/logo/Frame 6.png";
 import RegisterModal from "../modal/RegisterModal";
@@ -70,60 +66,60 @@ function Header() {
           isHaderActive ? "header-section  header-active" : " header-section"
         }
       >
-        <div className="container">
+        <div className="container py-2">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-12 d-flex">
               <div className="header-wrapper">
-                <div className="logo">
+                <div className="header__iconWrpr">
                   <Link to={"/"}>
                     <img className="black__logo" src={blackLogo} alt="logo" />
                     <img className="white__logo" src={white__logo} alt="logo" />
                   </Link>
-                </div>
 
-                <div className="header__iconWrpr">
                   <ul className={isActive ? "menu active" : "menu"}>
                     <li>
                       <Link to={"/partner"}>
-                        {/* <a id="tooltipText" className="toolTipBig"> */}
-                        <img
-                          src={findPartner}
-                          alt=""
-                          srcSet=""
-                          className="img-fluid"
-                        />
-                        <span className="tooltip__o">find your partner</span>
-                        {/* </a> */}
+                        <a id="tooltipText" className="toolTipBig">
+                          <img
+                            src={findPartner}
+                            alt=""
+                            srcSet=""
+                            className="img-fluid hovar-icon"
+                          />
+                          <span className="tooltip__o">find your partner</span>
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <Link to={"/membership"}>
-                        {/* <a
+                        <a
                           id="tooltipText"
                           href="membership.php"
                           className="pain"
-                        > */}
-                        <img
-                          src={membership}
-                          alt=""
-                          srcSet=""
-                          className="img-fluid"
-                        />
-                        <span className="tooltip__o">Membership</span>
-                        {/* </a> */}
+                        >
+                          <img
+                            src={membership}
+                            alt=""
+                            srcSet=""
+                            className="img-fluid hovar-icon"
+                          />
+
+                          <span className="tooltip__o">Membership</span>
+                        </a>
                       </Link>
                     </li>
                     <li>
                       <Link to={"/blog"}>
-                        {/* <a id="tooltipText" className="toolTipBig pain2"> */}
-                        <img
-                          src={blog}
-                          alt=""
-                          srcSet=""
-                          className="img-fluid"
-                        />
-                        <span className="tooltip__o">Blog</span>
-                        {/* </a> */}
+                        <a id="tooltipText" className="toolTipBig pain2">
+                          <img
+                            src={blog}
+                            alt=""
+                            srcSet=""
+                            className="img-fluid hovar-icon me-5"
+                          />
+
+                          <span className="tooltip__o">Blog</span>
+                        </a>
                       </Link>
                     </li>
                     <li>
@@ -132,7 +128,7 @@ function Header() {
                           src={course}
                           alt=""
                           srcSet=""
-                          className="img-fluid"
+                          className="img-fluid hovar-icon ms-2 hovar-icon"
                         />
                         <span className="tooltip__o">Course</span>
                       </Link>
@@ -143,7 +139,7 @@ function Header() {
                           src={shop}
                           alt=""
                           srcSet=""
-                          className="img-fluid"
+                          className="img-fluid hovar-icon"
                         />
                         <span className="tooltip__o">Shop</span>
                       </Link>
@@ -154,7 +150,7 @@ function Header() {
                           src={lawyer}
                           alt=""
                           srcSet=""
-                          className="img-fluid"
+                          className="img-fluid hovar-icon"
                         />
                         <span className="tooltip__o">Find a lawyer</span>
                       </Link>
@@ -165,7 +161,7 @@ function Header() {
                           src={kazi}
                           alt=""
                           srcSet=""
-                          className="img-fluid"
+                          className="img-fluid hovar-icon"
                         />
                         <span className="tooltip__o">Kazi</span>
                       </Link>
@@ -173,10 +169,10 @@ function Header() {
                     <li>
                       <Link to={"/agent"}>
                         <img
-                          src={AgentIcon}
+                          src={agentProfile}
                           alt=""
                           srcSet=""
-                          className="img-fluid"
+                          className="img-fluid hovar-icon"
                         />
                         <span className="tooltip__o">Agent</span>
                       </Link>
@@ -230,9 +226,9 @@ function Header() {
                         to="/cart"
                         className="positon-relative"
                       >
-                        <img src={cart} className="cart-bag img-fluid" alt="" />
+                        <img src={cart} className="cart-bag img-fluid mt-2" alt="" />
                         <span className="tooltip__o">Cart</span>
-                        <span className="cart-item">0</span>
+                        <span className="cart-item badge badge-secondary bg-danger mb-5">0</span>
                       </Link>
                     </li>
                     <li className="user-profile pl-2">

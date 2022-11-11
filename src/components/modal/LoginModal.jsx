@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from "react";
 import { Modal } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AuthServices from "../../api/AuthServices";
 import appStore from "../../assets/img/appstore.webp";
 import pic1 from "../../assets/img/play-store-logo-nisi-filters-australia-11.png";
@@ -293,9 +293,11 @@ function LoginModal({}) {
                       value={state.password}
                       onChange={inputChange}
                     />
+
                     <button className="my-2 loginBtn" onClick={inputSubmit}>
                       Login
                     </button>
+                    <button className="forget-password">Forget Password</button>
                   </div>
                 </div>
                 <div className="logiFooter">
@@ -308,7 +310,9 @@ function LoginModal({}) {
                       <img src={pic1} alt="" />
                     </a>
                   </div>
-                  <button className="custom-button mt-3">Sign up</button>
+                  <Link to="/regAsProfessional" className="custom-button mt-3">
+                    Sign up
+                  </Link>
                 </div>
               </div>
             </Modal.Body>

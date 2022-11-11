@@ -1216,10 +1216,11 @@ input[type="submit"] {
 .custom-button {
   background-image: linear-gradient(166deg, #f22876 0%, #942dd9 100%);
   box-shadow: 0.872px 9.962px 20px 0px rgb(12 78 165 / 30%);
-  padding: 0px 35px;
+  padding: 10px 35px;
   font-weight: 600;
   color: #ffffff !important;
   border-radius: 5px;
+  letter-spacing: 4px;
   display: inline-block;
   border: 0px;
   cursor: pointer;
@@ -1227,8 +1228,12 @@ input[type="submit"] {
   height: auto;
   font-size: 20px !important;
   font-family: "Font Awesome 5 Brands";
-  padding: 0px 33px !important;
+  padding: 10px 33px !important;
   font-weight: 600 !important;
+}
+
+.custom-button-htreeEasy {
+  padding: 10px 20px !important;
 }
 
 .custom-button:hover {
@@ -1836,6 +1841,7 @@ input[type="submit"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .header-wrapper .logo {
@@ -1882,13 +1888,23 @@ input[type="submit"] {
   .header-wrapper .menu li {
     padding: 5px 12px;
     position: relative;
+    text-align: center;
   }
 
   .header-wrapper .menu li a {
-    color: #e9eeff;
+    color: #fff;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  /* .img-fluid {
+    max-width: 60px !important;
+    height: auto;
+} */
+  .hovar-icon:hover {
+    transform: rotate(360deg);
+    transition: 3s ease-in-out;
   }
 
   .header-wrapper .menu li .submenu {
@@ -2016,6 +2032,16 @@ input[type="submit"] {
   .header-wrapper .menu li.user-profile .submenu::before {
     left: auto;
     right: 15px;
+  }
+
+  .carts {
+    background-color: rgb(232 232 232);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 
   .user-profile-login-icon {
@@ -2216,6 +2242,14 @@ input[type="submit"] {
 }
 
 /*Banner-Section Starts Here*/
+
+.bannerSwipeFind {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner-section .mySwiperTop .banner-swiper {
   padding: 50px 0 500px;
   position: relative;
@@ -3518,7 +3552,7 @@ input[type="submit"] {
 
 /* latest-registered-section Starts Here */
 .latest-registered-section {
-  padding: 118px 0px 80px;
+  padding: 30px 0px 30px;
   background: #5736cb;
   position: relative;
   overflow: hidden;
@@ -3558,7 +3592,7 @@ input[type="submit"] {
 }
 
 .latest-registered-section .content {
-  padding-left: 40%;
+  padding-left: 20%;
   padding-right: 200px;
   position: relative;
   z-index: 3;
@@ -10738,6 +10772,10 @@ input[type="submit"] {
   color: white !important;
 }
 
+.top-profile-header {
+  padding-top: 110px;
+}
+
 .top-slider-section .top-profile-header h4 {
   color: #ff317b;
   font-size: 50px;
@@ -11520,4 +11558,11 @@ h3 {
   border-radius: 5px;
   /* background: #80808045; */
   padding: 9px;
+}
+
+/* slide  */
+
+.slick-prev,
+.slick-next {
+  display: none !important;
 }

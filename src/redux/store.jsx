@@ -1,3 +1,4 @@
+import apiSlice from "./api/apiSlice";
 import AgentSlice from "./slices/AgentSlice";
 import AuthSlices from "./slices/AuthSlice";
 import BlogSlice from "./slices/BlogSlice";
@@ -16,6 +17,7 @@ const { configureStore } = require("@reduxjs/toolkit");
 
 export const store = () => configureStore({
   reducer: {
+    [apiSlice.reducerPath]: apiSlice.reducer,
     shopValue: ShopSlices,
     blogValue: BlogSlice,
     courseValue: CourseSlices,
@@ -34,7 +36,7 @@ export const store = () => configureStore({
   middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
           serializableCheck: false,
-        }),
+        }).concat(apiSlice.middleware),
 })
 
 // const store = createStore(()=>[], {}, applyMiddleware());

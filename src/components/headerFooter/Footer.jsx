@@ -1,11 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import shape1 from "../../assets/img/footer/f-shape.png";
 import shape2 from "../../assets/img/footer/flower01.png";
 import nIcon from "../../assets/img/footer/n-icon.png";
 import shape3 from "../../assets/img/footer/right-shape.png";
 
+
+
 function Footer() {
+
+
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    toast.warning('Under construction')
+  }
   return (
     <footer className="footer-section mt-3">
       <div className="ocean">
@@ -28,7 +37,7 @@ function Footer() {
                   <p className="text">
                     Sign up to receive a monthly email on the latest news!
                   </p>
-                  <form className="newslater-form">
+                  <form className="newslater-form" onSubmit={handlePopUp}>
                     <input type="text" placeholder="Your Email Address" />
                     <button type="submit">
                       <i className="fab fa-telegram-plane"></i>
@@ -62,20 +71,20 @@ function Footer() {
                       <i className="fas fa-angle-double-right"></i> Contact Us
                     </Link>
                   </li>
-                  <li>
+                  <li onClick={handlePopUp}>
                     <Link to="/">
                       <i className="fas fa-angle-double-right"></i> Customer
                       Reviews
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link onClick={()=>toast.warning("Under Construction")} to="/">
                       <i className="fas fa-angle-double-right"></i> Success
                       Stories
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link onClick={()=>toast.warning("Under Construction")} to="/">
                       <i className="fas fa-angle-double-right"></i> Business
                       License
                     </Link>
@@ -88,30 +97,30 @@ function Footer() {
                 <h4 className="f-l-title">My Account</h4>
                 <ul className="f-solial-links">
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Manage
                       Account
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Safety Tips
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Account
                       Varification
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Safety &
                       Security
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Membership
                       Level
                     </Link>
@@ -124,28 +133,28 @@ function Footer() {
                 <h4 className="f-l-title">help center</h4>
                 <ul className="f-solial-links">
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Help centre
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> FAQ
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i>Quick Start
                       Guide
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i>Tutorials
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i>Associate
                       Blog
                     </Link>
@@ -164,25 +173,25 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> End User
                       Agreements
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Refund
                       Policy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Cookie
                       policy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/">
+                    <Link to="/" onClick={()=>toast.warning("Under Construction")}>
                       <i className="fas fa-angle-double-right"></i> Report abuse
                     </Link>
                   </li>
@@ -201,7 +210,7 @@ function Footer() {
             <div className="col-lg-6 align-self-center">
               <div className="copyr-text">
                 <span>Copyright © 2021.All Rights Reserved By</span>
-                <Link className="ml-1" to="/">
+                <Link className="ml-1" to="/" onClick={()=>toast.warning("Under Construction")}>
                   shongshari.com
                 </Link>
               </div>
@@ -209,19 +218,19 @@ function Footer() {
             <div className="col-lg-6">
               <ul className="footer-social-links">
                 <li>
-                  <Link to="/">
+                  <a href="www.facebook.com/shongsharibd" onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-facebook-f"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/">
+                  <a href="instagram.com/shongshari_ " onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-instagram"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/">
+                  <a href="www.shongshari.com" onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-dribbble"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

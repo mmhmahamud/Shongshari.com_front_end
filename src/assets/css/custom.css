@@ -6,7 +6,7 @@
   background-image: linear-gradient(166deg, #f22876 0%, #942dd9 100%);
 }
 
-.container.bnnr {
+.bannerContainer.bnnr {
   position: absolute;
   z-index: 1;
   bottom: 20%;
@@ -28,11 +28,9 @@
 .feature-section .offer,
 .footer-section .icon,
 .feature-section .submit {
-  background: linear-gradient(
-    150deg,
-    rgba(81, 27, 231, 1) 0%,
-    rgba(228, 18, 114, 1) 100%
-  ) !important;
+  background: linear-gradient(150deg,
+      rgba(81, 27, 231, 1) 0%,
+      rgba(228, 18, 114, 1) 100%) !important;
 }
 
 .join-now-section,
@@ -60,14 +58,17 @@
   /* background: linear-gradient(145deg, rgba(81, 27, 231, 0.5) 0%, rgba(228, 18, 114, 0.5) 100%); */
   /* border-radius: 0px 30px 30px 0px; */
 }
+
 .user-setting-section .input-info-box .content .my-input-box:last-child .btn {
   background: linear-gradient(166deg, #4844a5 0%, #dd2972 100%);
   width: 250px;
 }
+
 .education-modal .content .my-input-box:last-child .btn {
   background: linear-gradient(166deg, #4844a5 0%, #dd2972 100%);
   width: 220px;
 }
+
 img.cart-bag {
   height: 2rem;
 }
@@ -303,13 +304,16 @@ input:focus {
 .btn-cart-totals .round-black-btn {
   margin: 10px 0;
 }
+
 .course-box .card-img-box img.card-img-top {
   height: 15rem;
   object-fit: cover;
 }
+
 .course-box p.card-text {
   font-size: 0.9rem;
 }
+
 img.ply-thumb {
   position: absolute;
   height: 15rem;
@@ -329,18 +333,22 @@ img.ply-thumb {
   transition: 0.4s;
   overflow: hidden;
 }
+
 .single-course-inner .thumb {
   overflow: hidden;
 }
+
 .single-course-inner .thumb img {
   transform: scale(1.05);
   transition: 0.4s;
 }
+
 .single-course-inner .thumb .cat-area {
   position: absolute;
   top: 23px;
   left: 23px;
 }
+
 .single-course-inner .thumb .cat-area .cat {
   border: 0;
   color: #fff;
@@ -351,10 +359,12 @@ img.ply-thumb {
   font-size: 14px;
   display: inline-block;
 }
+
 .single-course-inner .details {
   position: relative;
   padding: 25px;
 }
+
 .single-course-inner .details .price {
   display: inline-block;
   height: 55px;
@@ -370,48 +380,60 @@ img.ply-thumb {
   top: -26px;
   background: #4b44a5;
 }
+
 .single-course-inner .details .price span:nth-child(1) {
   padding-top: 12px;
   display: block;
 }
+
 .single-course-inner .details .price span:nth-child(2) {
   font-size: 13px;
 }
+
 .single-course-inner .details .status i {
   color: var(--main-color);
   margin-right: 4px;
 }
+
 .single-course-inner .details .details-inner {
   padding-bottom: 26px;
 }
+
 .single-course-inner .details .author {
   margin-top: 20px;
   cursor: pointer !important;
 }
+
 .single-course-inner .details .author .media-left {
   margin-right: 10px;
 }
+
 .single-course-inner .details .author .media-left img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
 }
+
 .single-course-inner .details .author .media-body p {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 600;
 }
+
 .single-course-inner .details h5 {
   margin-bottom: 0;
 }
+
 .single-course-inner .details .bottom-area {
   border-top: 1px solid #cfd9e0;
   padding-top: 19px;
 }
+
 .single-course-inner .details .bottom-area .readmore-text {
   position: relative;
   color: var(--main-color);
 }
+
 .single-course-inner .details .bottom-area .readmore-text:after {
   content: "";
   position: absolute;
@@ -422,12 +444,15 @@ img.ply-thumb {
   background: var(--main-color);
   transition: 0.4s;
 }
+
 .single-course-inner .details .bottom-area .readmore-text:hover:after {
   width: 100%;
 }
+
 .single-course-inner:hover {
   box-shadow: 0px 2px 12px #97a1b21a;
 }
+
 .single-course-inner:hover .thumb img {
   transform: scale(1.1);
 }
@@ -443,9 +468,11 @@ img.ply-thumb {
   color: #fff;
   margin-right: 4px;
 }
+
 .cat-area a.cat-yellow {
   background: #eeb600;
 }
+
 .cat-area a.cat-green {
   background: #0ebe9a;
 }
@@ -464,30 +491,37 @@ img.ply-thumb {
 .course-details-meta-list {
   margin-bottom: 30px;
 }
+
 .course-details-meta-list .media .media-left {
   margin-right: 8px;
 }
+
 .course-details-meta-list .media .media-left img {
   height: 45px;
   width: 45px;
   border-radius: 50%;
 }
+
 .course-details-meta-list .media .media-body {
   margin-top: -4px;
 }
+
 .course-details-meta-list span {
   color: #949494;
   font-weight: 500;
   font-size: 16px;
 }
+
 .course-details-meta-list h6 {
   margin-bottom: 0;
 }
+
 .course-details-meta-list .enrole-inner strong {
   font-weight: 600;
   color: var(--main-color);
   margin-right: 10px;
 }
+
 .course-details-meta-list .enrole-inner .btn {
   padding: 0 12px;
   height: 40px;
@@ -499,11 +533,13 @@ img.ply-thumb {
   background: #f2f2f2;
   margin-bottom: 44px;
 }
+
 .course-details-nav-tab ul {
   margin: 0;
   padding: 0;
   border: 0 !important;
 }
+
 .course-details-nav-tab ul li a {
   border: 0 !important;
   border-right: 2px solid #fff !important;
@@ -513,10 +549,12 @@ img.ply-thumb {
   border-radius: 0 !important;
   border-top: 2px solid #f2f2f2 !important;
 }
+
 .course-details-nav-tab ul li a.active {
   color: var(--main-color) !important;
   border-top: 2px solid var(--main-color) !important;
 }
+
 .course-details-nav-tab ul li:last-child a {
   border-right: 0 !important;
 }
@@ -524,25 +562,31 @@ img.ply-thumb {
 .course-details-content h4 {
   margin-bottom: 20px;
 }
+
 .course-details-content p {
   margin-bottom: 14px;
 }
+
 .course-details-content .single-list-inner {
   padding-top: 16px;
 }
+
 .course-details-content .single-list-inner ul li i {
   margin-right: 10px;
 }
+
 .course-details-content .course-feature-area {
   background: #f6f6f6;
   padding: 30px 30px 20px 30px;
   border-radius: 6px;
   margin-top: 30px;
 }
+
 .course-details-content .course-feature-area ul {
   margin: 0;
   padding: 0;
 }
+
 .course-details-content .course-feature-area ul li {
   list-style: none;
   margin-bottom: 10px;
@@ -554,9 +598,11 @@ img.ply-thumb {
   max-width: 1170px;
   margin: auto;
 }
+
 img {
   max-width: 100%;
 }
+
 .inbox_people {
   background: #f8f8f8 none repeat scroll 0 0;
   float: left;
@@ -564,11 +610,13 @@ img {
   width: 40%;
   border-right: 1px solid #c4c4c4;
 }
+
 .inbox_msg {
   border: 1px solid #c4c4c4;
   clear: both;
   overflow: hidden;
 }
+
 .top_spac {
   margin: 20px 0 0;
 }
@@ -577,11 +625,13 @@ img {
   float: left;
   width: 40%;
 }
+
 .srch_bar {
   display: inline-block;
   text-align: right;
   width: 60%;
 }
+
 .headind_srch {
   padding: 10px 29px 10px 20px;
   overflow: hidden;
@@ -593,6 +643,7 @@ img {
   font-size: 21px;
   margin: auto;
 }
+
 .srch_bar input {
   border: 1px solid #cdcdcd;
   border-width: 0 0 1px 0;
@@ -600,6 +651,7 @@ img {
   padding: 2px 0 4px 6px;
   background: none;
 }
+
 .srch_bar .input-group-addon button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
@@ -607,6 +659,7 @@ img {
   color: #707070;
   font-size: 18px;
 }
+
 .srch_bar .input-group-addon {
   margin: 0 0 0 -27px;
 }
@@ -616,19 +669,23 @@ img {
   color: #464646;
   margin: 0 0 8px 0;
 }
+
 .chat_ib h5 span {
   font-size: 13px;
   float: right;
 }
+
 .chat_ib p {
   font-size: 14px;
   color: #989898;
   margin: auto;
 }
+
 .chat_img {
   float: left;
   width: 11%;
 }
+
 .chat_ib {
   float: left;
   padding: 0 0 0 15px;
@@ -639,11 +696,13 @@ img {
   overflow: hidden;
   clear: both;
 }
+
 .chat_list {
   border-bottom: 1px solid #c4c4c4;
   margin: 0;
   padding: 18px 16px 10px;
 }
+
 .inbox_chat {
   height: 550px;
   overflow-y: scroll;
@@ -657,12 +716,14 @@ img {
   display: inline-block;
   width: 6%;
 }
+
 .received_msg {
   display: inline-block;
   padding: 0 0 0 10px;
   vertical-align: top;
   width: 92%;
 }
+
 .received_withd_msg p {
   background: #ebebeb none repeat scroll 0 0;
   border-radius: 3px;
@@ -672,15 +733,18 @@ img {
   padding: 5px 10px 5px 12px;
   width: 100%;
 }
+
 .time_date {
   color: #747474;
   display: block;
   font-size: 12px;
   margin: 8px 0 0;
 }
+
 .received_withd_msg {
   width: 57%;
 }
+
 .mesgs {
   float: left;
   padding: 30px 15px 0 25px;
@@ -696,14 +760,17 @@ img {
   padding: 5px 10px 5px 12px;
   width: 100%;
 }
+
 .outgoing_msg {
   overflow: hidden;
   margin: 26px 0 26px;
 }
+
 .sent_msg {
   float: right;
   width: 46%;
 }
+
 .input_msg_write input {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
@@ -717,6 +784,7 @@ img {
   border-top: 1px solid #c4c4c4;
   position: relative;
 }
+
 .msg_send_btn {
   background: #05728f none repeat scroll 0 0;
   border: medium none;
@@ -730,13 +798,16 @@ img {
   top: 11px;
   width: 33px;
 }
+
 .messaging {
   padding: 0 0 50px 0;
 }
+
 .msg_history {
   height: 516px;
   overflow-y: auto;
 }
+
 div#chats-content {
   position: sticky;
   height: 100vh !important;
@@ -753,19 +824,19 @@ img.card-img-top.pp {
 }
 
 .cs-btn {
-  background: linear-gradient(
-    155deg,
-    rgba(228, 18, 114, 1) 0%,
-    #4844a5 100%
-  ) !important;
+  background: linear-gradient(155deg,
+      rgba(228, 18, 114, 1) 0%,
+      #4844a5 100%) !important;
   color: #fff;
   cursor: pointe;
 }
+
 span.cart-item {
   position: absolute;
   top: 10px;
   right: 0;
 }
+
 .top-profile-maim .single-slider:hover .info__cardUp {
   top: 10%;
 }
@@ -779,45 +850,56 @@ span.cart-item {
   position: relative;
   height: 515px;
 }
+
 .top-profile-maim .single-slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .top-profile-slider {
   padding: 20px 5px;
 }
+
 .top-profile-maim .top-slider-section .top-profile-title h2 {
   color: #e21274;
   padding: 25px 0 35px;
 }
+
 .input-info-box .modal-header button {
   width: 0;
   padding-right: 30px;
 }
+
 .input-info-box .modal-footer button {
   width: 175px;
 }
+
 .inner__contentSlide {
   text-align: start;
   color: black;
   padding: 15px 35px;
 }
+
 .inner__contentSlide2 {
   color: white;
 }
+
 .inner__contentSlide p {
   margin-bottom: 0px;
   font-weight: 600;
 }
+
 .inner__contentSlide span {
   font-weight: 600;
 }
+
 .inner__contentSlide ul li {
   padding: 0;
   font-size: 13px;
   line-height: 25px;
 }
+
 .inner__contentSlide ul li span {
   font-weight: 900;
 }
@@ -825,6 +907,7 @@ span.cart-item {
 .o__storiesSlider {
   padding: 150px 0px;
 }
+
 .o__boxContent {
   display: flex;
   align-items: center;
@@ -832,6 +915,7 @@ span.cart-item {
   column-gap: 30px;
   margin-bottom: 30px;
 }
+
 .o__boxImg {
   overflow: hidden;
   border-radius: 50%;
@@ -839,8 +923,19 @@ span.cart-item {
   width: 399px;
   height: 167px;
 }
+
+.forget-password {
+  width: 50%;
+  background: linear-gradient(155deg, #ca8a14e8 0%, #f1f106f5 100%);
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 500;
+}
+
 .loginBtn {
   background: linear-gradient(155deg, rgba(228, 18, 114, 1) 0%, #4844a5 100%);
+
   color: white;
   font-size: 26px;
   font-weight: 500;
@@ -848,17 +943,21 @@ span.cart-item {
   border-radius: 5px;
   font-family: "Font Awesome 5 Brands";
 }
+
 .o__boxImg img {
   height: 100%;
   width: 100%;
 }
+
 .o__boxText {
   text-align: flex-end;
 }
+
 .o__boxText h5 {
   margin-bottom: 15px;
   font-weight: bold;
 }
+
 .o__boxLink {
   display: flex;
   justify-content: flex-end;
@@ -866,12 +965,14 @@ span.cart-item {
   align-items: center;
   width: 89%;
 }
+
 .o__boxLink p {
   margin: 0;
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .o__boxLink a {
   background: linear-gradient(155deg, rgba(228, 18, 114, 1) 0%, #4844a5 100%);
   box-shadow: 0.872px 9.962px 20px 0px rgb(12 78 165 / 30%);
@@ -881,6 +982,7 @@ span.cart-item {
   border-radius: 5px;
   position: relative;
 }
+
 .o__boxLink a::before {
   content: "";
   width: 100%;
@@ -892,40 +994,51 @@ span.cart-item {
   right: 70%;
   z-index: -1;
 }
+
 .o__reverseLink a::before {
   left: 70%;
 }
+
 .o__brideSocial {
   display: flex;
   justify-content: flex-end;
   column-gap: 15px;
 }
+
 .o__brideSocial a {
   color: #333333;
 }
+
 .o__brideSocial a:hover {
   color: #ff317b;
 }
+
 .o__reverse {
   flex-direction: row-reverse;
 }
+
 .o__reverseLink {
   justify-content: start;
   flex-direction: row-reverse;
   margin-left: 11%;
 }
+
 .o__textReverse {
   text-align: start;
 }
+
 .o__bridereverse {
   justify-content: start;
 }
+
 .o__pbNOne {
   padding-bottom: 80px !important;
 }
+
 .o__brideBox:hover .o__boxText h5 {
   color: #ff317b;
 }
+
 .o__brideBox:hover .o__boxImg {
   border-color: #ff317b;
 }
