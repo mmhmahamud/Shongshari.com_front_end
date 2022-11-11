@@ -2,7 +2,7 @@ import apiSlice from "../../api/apiSlice";
 
 export const authApi = apiSlice.injectEndpoints({
     endpoints: builder => ({
-        register: builder.mutation({
+        registerAsProfessional: builder.mutation({
             query: data => ({
                 url: "/admin/auth/registeradmin",
                 method: "POST",
@@ -16,7 +16,14 @@ export const authApi = apiSlice.injectEndpoints({
                 body: data,
             }),
         }),
+        registerAsMember: builder.mutation({
+            query: data => ({
+                url: "/member//register/personalDetail",
+                method: "POST",
+                body: data,
+            }),
+        }),
     }),
 });
 
-export const { useRegisterMutation, useLoginMutation } = authApi;
+export const { useRegisterAsProfessionalMutation, useLoginMutation, useRegisterAsMemberMutation } = authApi;
