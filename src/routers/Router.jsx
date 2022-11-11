@@ -5,7 +5,6 @@ import BlogPage from "../pages/BlogPage";
 import CartPage from "../pages/cart/CartPage";
 import CoursePage from "../pages/course/CoursePage";
 import SingleCoursePage from "../pages/course/SingleCoursePage";
-// import CoursePage from "../pages/course/CoursePagersePage";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import WOW from "wowjs";
