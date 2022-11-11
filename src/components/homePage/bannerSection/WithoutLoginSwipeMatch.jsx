@@ -48,7 +48,7 @@ function WithoutLoginSwipeMatch({ match, setMatch, item }) {
                     <i className="fa-solid fa-angle-right"></i>
                   </span>
                   <h2>
-                  {item.name} <samp>{item.age}</samp>
+                    {item.name} <samp>{item.age}</samp>
                   </h2>
                   <p className="swipe-label1">
                     <i className="fas fa-star"></i> Login first

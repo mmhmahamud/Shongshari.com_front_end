@@ -9,7 +9,7 @@ import dummyData from "../topProfile/dummyData";
 
 function SwipeMatch() {
   const [match, setMatch] = useState(4);
-  
+
   return (
     <div className="col-xl-4 col-lg-5  col-md-6">
       <div className="swiper mySwiperImg">
@@ -25,7 +25,7 @@ function SwipeMatch() {
             modules={[Navigation]}
             className=" swiper-wrapper"
           >
-            <WithoutLoginSwipeMatch match={match} setMatch={setMatch} item={dummyData[match]}/>
+            <WithoutLoginSwipeMatch match={match} setMatch={setMatch} item={dummyData[match]} />
           </Swiper>
         </div>
         <div className="swipe-header">
