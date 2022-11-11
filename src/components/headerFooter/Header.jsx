@@ -6,14 +6,14 @@ import lawyer from "../../assets/img/icon/Lawyer.svg";
 import findPartner from "../../assets/img/icon/Find Your Partner.svg";
 import course from "../../assets/img/icon/Online Course.svg";
 import shop from "../../assets/img/icon/Shop.svg";
-import membership from "../../assets/img/icon/LogoMakr-7XW4Bl.png";
+import membership from "../../assets/img/icon/Membership.svg";
 import blog from "../../assets/img/icon/Blog.svg";
-import {
-  default as agentProfile,
-  // default as register,
-} from "../../assets/img/icon/LogoMakr-9dyVlR.png";
+// import {
+//   default as agentProfile,
+//   default as register,
+// } from "../../assets/img/icon/LogoMakr-9dyVlR.png";
 import kazi from "../../assets/img/icon/Kazi.svg";
-// import Agent from "../../assets/img/icon/Agent.svg";
+import AgentIcon from "../../assets/img/icon/Agent.svg";
 import register from "../../assets/img/icon/Profile Login Icon.svg";
 import languageBangla from "../../assets/img/icon/Language Switcher Bangla.svg";
 import languageEnglish from "../../assets/img/icon/Language Switcher English.svg";
@@ -85,47 +85,45 @@ function Header() {
                   <ul className={isActive ? "menu active" : "menu"}>
                     <li>
                       <Link to={"/partner"}>
-                        <a id="tooltipText" className="toolTipBig">
-                          <img
-                            src={findPartner}
-                            alt=""
-                            srcSet=""
-                            className="img-fluid"
-                          />
-                          <span className="tooltip__o">find your partner</span>
-                        </a>
+                        {/* <a id="tooltipText" className="toolTipBig"> */}
+                        <img
+                          src={findPartner}
+                          alt=""
+                          srcSet=""
+                          className="img-fluid"
+                        />
+                        <span className="tooltip__o">find your partner</span>
+                        {/* </a> */}
                       </Link>
                     </li>
                     <li>
                       <Link to={"/membership"}>
-                        <a
+                        {/* <a
                           id="tooltipText"
                           href="membership.php"
                           className="pain"
-                        >
-                          <img
-                            src={membership}
-                            alt=""
-                            srcSet=""
-                            className="img-fluid"
-                          />
-
-                          <span className="tooltip__o">Membership</span>
-                        </a>
+                        > */}
+                        <img
+                          src={membership}
+                          alt=""
+                          srcSet=""
+                          className="img-fluid"
+                        />
+                        <span className="tooltip__o">Membership</span>
+                        {/* </a> */}
                       </Link>
                     </li>
                     <li>
                       <Link to={"/blog"}>
-                        <a id="tooltipText" className="toolTipBig pain2">
-                          <img
-                            src={blog}
-                            alt=""
-                            srcSet=""
-                            className="img-fluid"
-                          />
-
-                          <span className="tooltip__o">Blog</span>
-                        </a>
+                        {/* <a id="tooltipText" className="toolTipBig pain2"> */}
+                        <img
+                          src={blog}
+                          alt=""
+                          srcSet=""
+                          className="img-fluid"
+                        />
+                        <span className="tooltip__o">Blog</span>
+                        {/* </a> */}
                       </Link>
                     </li>
                     <li>
@@ -175,7 +173,7 @@ function Header() {
                     <li>
                       <Link to={"/agent"}>
                         <img
-                          src={agentProfile}
+                          src={AgentIcon}
                           alt=""
                           srcSet=""
                           className="img-fluid"
