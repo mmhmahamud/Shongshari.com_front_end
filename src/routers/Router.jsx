@@ -38,6 +38,7 @@ import TermsConditions from "../pages/TermsConditions/TermsConditions";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import SingleProfiles from "../pages/singleProfile/SingleProfiles";
+import RegisterMember from "../pages/RegisterMember/RegisterMember";
 // import ProductPage from "../pages/product/ProductPageductPage";
 
 function Router() {
@@ -104,6 +105,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/single-profiles" element={<SingleProfiles />} />
+        <Route path="/register-member" element={<RegisterMember />} />
 
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginModal />} />
