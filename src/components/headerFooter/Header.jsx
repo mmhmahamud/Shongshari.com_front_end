@@ -17,6 +17,7 @@ import blackLogo from "../../assets/img/logo/Frame 5.png";
 import RegisterModal from "../modal/RegisterModal";
 import ScrollToTop from "../ScrollToTop";
 import { toastifyAlertSuccess } from "../toast/toast";
+import "./header.css";
 
 function Header() {
   const { authenticated, currentUser } = useSelector(
@@ -83,7 +84,7 @@ function Header() {
                             src={findPartner}
                             alt=""
                             srcSet=""
-                            className="img-fluid hovar-icon"
+                            className="img-fluid img-resize hovar-icon"
                           />
                           <span className="tooltip__o">find your partner</span>
                         </a>
@@ -100,7 +101,7 @@ function Header() {
                             src={membership}
                             alt=""
                             srcSet=""
-                            className="img-fluid hovar-icon"
+                            className="img-fluid img-resize  hovar-icon"
                           />
 
                           <span className="tooltip__o">Membership</span>
@@ -114,7 +115,7 @@ function Header() {
                             src={blog}
                             alt=""
                             srcSet=""
-                            className="img-fluid hovar-icon me-5"
+                            className="img-fluid img-resize hovar-icon me-5"
                           />
 
                           <span className="tooltip__o">Blog</span>
@@ -127,7 +128,7 @@ function Header() {
                           src={course}
                           alt=""
                           srcSet=""
-                          className="img-fluid hovar-icon ms-2 hovar-icon"
+                          className="img-fluid img-resize hovar-icon ms-2 hovar-icon"
                         />
                         <span className="tooltip__o">Course</span>
                       </Link>
@@ -149,7 +150,7 @@ function Header() {
                           src={lawyer}
                           alt=""
                           srcSet=""
-                          className="img-fluid hovar-icon"
+                          className="img-fluid img-resize hovar-icon"
                         />
                         <span className="tooltip__o">Find a lawyer</span>
                       </Link>
@@ -160,7 +161,7 @@ function Header() {
                           src={kazi}
                           alt=""
                           srcSet=""
-                          className="img-fluid hovar-icon"
+                          className="img-fluid img-resize hovar-icon"
                         />
                         <span className="tooltip__o">Kazi</span>
                       </Link>
@@ -171,7 +172,7 @@ function Header() {
                           src={agentProfile}
                           alt=""
                           srcSet=""
-                          className="img-fluid hovar-icon"
+                          className="img-fluid img-resize hovar-icon"
                         />
                         <span className="tooltip__o">Agent</span>
                       </Link>
