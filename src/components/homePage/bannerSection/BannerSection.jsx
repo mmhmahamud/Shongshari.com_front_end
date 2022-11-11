@@ -21,7 +21,7 @@ function BannerSection() {
   }, [dispatch]);
   return (
     <>
-      <section className="banner-section">
+      <section className="banner-section w-100">
         <div className="swiper mySwiperTop slider-content">
           <Carousel>
             <Carousel.Item interval={5000}>
@@ -82,8 +82,8 @@ function BannerSection() {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div className="container bnnr">
-          <div className="container row justify-content-xl-between justify-content-lg-around">
+        <div className="bannerContainer bnnr bannerSwipeFind mx-auto">
+          <div className="container w-100 row justify-content-xl-between justify-content-lg-around">
             <SwipeMatch />
             <FIndPartner />
           </div>

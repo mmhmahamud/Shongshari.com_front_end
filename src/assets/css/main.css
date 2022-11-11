@@ -1216,10 +1216,11 @@ input[type="submit"] {
 .custom-button {
   background-image: linear-gradient(166deg, #f22876 0%, #942dd9 100%);
   box-shadow: 0.872px 9.962px 20px 0px rgb(12 78 165 / 30%);
-  padding: 0px 35px;
+  padding: 10px 35px;
   font-weight: 600;
   color: #ffffff !important;
   border-radius: 5px;
+  letter-spacing: 4px;
   display: inline-block;
   border: 0px;
   cursor: pointer;
@@ -1227,8 +1228,12 @@ input[type="submit"] {
   height: auto;
   font-size: 20px !important;
   font-family: "Font Awesome 5 Brands";
-  padding: 0px 33px !important;
+  padding: 10px 33px !important;
   font-weight: 600 !important;
+}
+
+.custom-button-htreeEasy {
+  padding: 10px 20px !important;
 }
 
 .custom-button:hover {
@@ -2023,7 +2028,8 @@ input[type="submit"] {
     left: auto;
     right: 15px;
   }
-  .carts{
+
+  .carts {
     background-color: rgb(232 232 232);
     width: 50px;
     height: 50px;
@@ -2231,6 +2237,14 @@ input[type="submit"] {
 }
 
 /*Banner-Section Starts Here*/
+
+.bannerSwipeFind {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner-section .mySwiperTop .banner-swiper {
   padding: 50px 0 500px;
   position: relative;
@@ -11539,4 +11553,11 @@ h3 {
   border-radius: 5px;
   /* background: #80808045; */
   padding: 9px;
+}
+
+/* slide  */
+
+.slick-prev,
+.slick-next {
+  display: none !important;
 }

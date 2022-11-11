@@ -14,6 +14,7 @@ import cart from "../../assets/img/icon/LogoMakr-02OEp4.png";
 // import Agent from "../../assets/img/icon/Agent.svg";
 import register from "../../assets/images/menuicon/Profile Login Icon.svg";
 import blackLogo from "../../assets/img/logo/Frame 5.png";
+import white__logo from "../../assets/img/logo/Frame 6.png";
 import RegisterModal from "../modal/RegisterModal";
 import ScrollToTop from "../ScrollToTop";
 import { toastifyAlertSuccess } from "../toast/toast";
@@ -73,7 +74,7 @@ function Header() {
                 <div className="header__iconWrpr">
                   <Link to={"/"}>
                     <img className="black__logo" src={blackLogo} alt="logo" />
-                    {/* <img className="white__logo" src={white__logo} alt="logo" /> */}
+                    <img className="white__logo" src={white__logo} alt="logo" />
                   </Link>
 
                   <ul className={isActive ? "menu active" : "menu"}>

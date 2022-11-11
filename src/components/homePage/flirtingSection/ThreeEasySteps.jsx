@@ -32,7 +32,10 @@ function ThreeEasySteps() {
                   </ul>
                 </div>
                 <div className="myCol3">
-                  <a href="#" className="custom-button">
+                  <a
+                    href="#"
+                    className="custom-button custom-button-htreeEasy "
+                  >
                     Join Now!
                   </a>
                 </div>
