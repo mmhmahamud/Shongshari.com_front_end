@@ -218,17 +218,17 @@ function Footer() {
             <div className="col-lg-6">
               <ul className="footer-social-links">
                 <li>
-                  <a href="www.facebook.com/shongsharibd" onClick={()=>toast.warning("Under Construction")}>
+                  <a href="https://www.facebook.com/shongsharibd" target='blank' onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="instagram.com/shongshari_ " onClick={()=>toast.warning("Under Construction")}>
+                  <a href="http://instagram.com/shongshari_"target='blank' onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="www.shongshari.com" onClick={()=>toast.warning("Under Construction")}>
+                  <a href="http://localhost:3000/" target='blank' onClick={()=>toast.warning("Under Construction")}>
                     <i className="fab fa-dribbble"></i>
                   </a>
                 </li>

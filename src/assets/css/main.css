@@ -1853,6 +1853,7 @@ input[type="submit"] {
 }
 
 .header-wrapper .logo a img {
+  width: 60px !important;
   max-width: 100%;
 }
 
@@ -1897,16 +1898,10 @@ input[type="submit"] {
     font-weight: 700;
     text-transform: uppercase;
   }
-
-  /* .img-fluid {
-    max-width: 60px !important;
-    height: auto;
-} */
-  .hovar-icon:hover {
-    transform: rotate(360deg);
-    transition: 3s ease-in-out;
-  }
-
+.hovar-icon:hover{
+  transform: rotate(360deg);
+  transition: 3s ease-in-out;
+}
   .header-wrapper .menu li .submenu {
     position: absolute;
     top: 100%;
@@ -2040,7 +2035,7 @@ input[type="submit"] {
     height: 50px;
     border-radius: 25px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
 
