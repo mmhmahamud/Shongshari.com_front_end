@@ -17,11 +17,14 @@ import RegisterModal from "../modal/RegisterModal";
 import ScrollToTop from "../ScrollToTop";
 import { toastifyAlertSuccess } from "../toast/toast";
 import "./header.css";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import {auth} from '../../firebase';
+import { useSignOut } from 'react-firebase-hooks/auth';
 
 function Header() {
     const { authenticated, currentUser } = useSelector(state => state.authValue);
-
-    const token = localStorage.getItem("accessToken");
+    const [user, loading, error] = useAuthState(auth);
+    const [signOut] = useSignOut(auth);
 
     const [isActive, setIsActive] = useState(false);
     const [regShow, setRegShow] = useState(false);
@@ -30,8 +33,9 @@ function Header() {
     const handleRegShow = () => setRegShow(true);
     let [isHaderActive, setIsHeaderActive] = useState(false);
 
-    let logOut = () => {
+    let logOut = async () => {
         window.localStorage.removeItem("accessToken");
+        await signOut()
         toastifyAlertSuccess("Logged out successfully", "top-center");
         setTimeout(() => {
             window.location.reload();
@@ -144,7 +148,7 @@ function Header() {
                     </li> */}
                                     </ul>
                                     <ul className={isActive ? "menu active" : "menu"}>
-                                        {token ? (
+                                        {user ? (
                                             <li id="tooltipText" className="user-profile d-flex">
                                                 <Link to={`/profile/info/${currentUser.id}`}>
                                                     <img className="user-profile-login-icon" src={register} alt="img" />

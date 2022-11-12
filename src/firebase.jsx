@@ -1,19 +1,24 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
+import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDWlwZwDaS1N--ejqb9NooqvIHTKiikRRQ",
-  authDomain: "matrimonial-f3181.firebaseapp.com",
-  projectId: "matrimonial-f3181",
-  storageBucket: "matrimonial-f3181.appspot.com",
-  messagingSenderId: "462837875763",
-  appId: "1:462837875763:web:0152cea1c123ab59f58f46",
+    apiKey: "AIzaSyAjzmOQUwPqxzjnSj_lT5mi0Cd8jzz76OM",
+    authDomain: "songsari-f1107.firebaseapp.com",
+    projectId: "songsari-f1107",
+    storageBucket: "songsari-f1107.appspot.com",
+    messagingSenderId: "270463492610",
+    appId: "1:270463492610:web:8931dde21590463e8ffd1b",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getDatabase(app);
+export const storage = getStorage(app);
+
+export const auth = getAuth(app);

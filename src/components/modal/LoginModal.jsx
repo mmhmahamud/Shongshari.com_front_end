@@ -1,10 +1,11 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer , useState} from "react";
 import { Modal } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import AuthServices from "../../api/AuthServices";
 import appStore from "../../assets/img/appstore.webp";
 import pic1 from "../../assets/img/play-store-logo-nisi-filters-australia-11.png";
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import {
   authenticatedFunction,
   loginModalShowAction,
@@ -13,9 +14,17 @@ import {
 import { setToken, setType } from "../../utils/functions";
 
 import { customPosition } from "../../utils/Modals";
+import {auth} from "../../firebase"
 
 function LoginModal({}) {
   const { authenticated, loginShow } = useSelector((state) => state.authValue);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState('');
+
+  const [
+    signInWithEmailAndPassword,
+    user,
+  ] = useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -56,6 +65,11 @@ function LoginModal({}) {
 
   let inputSubmit = async (e) => {
     e.preventDefault();
+
+    await signInWithEmailAndPassword(email, password)
+    if(user){
+      console.log(user)
+    }
     let data = {
       user_role:
         state.modalNow === USER
@@ -85,6 +99,8 @@ function LoginModal({}) {
       dispatch(typeFunction(res.data.data.user_type));
       setType(res.data.data.user_type);
 
+
+
       // console.log(from);
       navigate(from, { replace: true });
       // navigate(`/profile/info/${res.data.data.profile_id}`);
@@ -99,7 +115,7 @@ function LoginModal({}) {
     // console.log("state :>> ", state);
   };
 
-  let changeInput = (data) => setState({ modalNow: data });
+  // let changeInput = (data) => setState({ modalNow: data });
 
   return (
     <>
@@ -285,13 +301,13 @@ function LoginModal({}) {
                       className="my-2"
                       name="email"
                       value={state.email}
-                      onChange={inputChange}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                     <input
                       type={"password"}
                       name="password"
                       value={state.password}
-                      onChange={inputChange}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
 
                     <button className="my-2 loginBtn" onClick={inputSubmit}>
