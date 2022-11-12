@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { default as agentProfile } from "../../assets/images/menuicon/Agent.svg";
 import blog from "../../assets/images/menuicon/Blog.svg";
 import findPartner from "../../assets/images/menuicon/Find Your Partner.svg";
@@ -10,16 +10,15 @@ import membership from "../../assets/images/menuicon/Membership.svg";
 import course from "../../assets/images/menuicon/Online Course.svg";
 import cart from "../../assets/img/icon/LogoMakr-02OEp4.png";
 // import Agent from "../../assets/img/icon/Agent.svg";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import register from "../../assets/images/menuicon/Profile Login Icon.svg";
 import blackLogo from "../../assets/img/logo/Frame 5.png";
 import white__logo from "../../assets/img/logo/Frame 6.png";
+import { auth } from "../../firebase";
 import RegisterModal from "../modal/RegisterModal";
 import ScrollToTop from "../ScrollToTop";
 import { toastifyAlertSuccess } from "../toast/toast";
 import "./header.css";
-import { useAuthState } from 'react-firebase-hooks/auth';
-import {auth} from '../../firebase';
-import { useSignOut } from 'react-firebase-hooks/auth';
 
 function Header() {
     const { authenticated, currentUser } = useSelector(state => state.authValue);
@@ -28,6 +27,7 @@ function Header() {
 
     const [isActive, setIsActive] = useState(false);
     const [regShow, setRegShow] = useState(false);
+    const navigate = useNavigate();
 
     const handleRegClose = () => setRegShow(false);
     const handleRegShow = () => setRegShow(true);
@@ -35,7 +35,7 @@ function Header() {
 
     let logOut = async () => {
         window.localStorage.removeItem("accessToken");
-        await signOut()
+        await signOut();
         toastifyAlertSuccess("Logged out successfully", "top-center");
         setTimeout(() => {
             window.location.reload();
@@ -151,11 +151,11 @@ function Header() {
                                         {user ? (
                                             <li id="tooltipText" className="user-profile d-flex">
                                                 <Link to={`/profile/info/${currentUser.id}`}>
-                                                    <img className="user-profile-login-icon" src={register} alt="img" />
+                                                    <img className="user-profile-login-icon" src={user.photoURL} alt="img" />
                                                 </Link>
-
-                                                <span className="tooltip__o tooltip__02" onClick={logOut}>
-                                                    <p>Logout</p>
+                                                <span className="tooltip__o tooltip__02">
+                                                    <Link to="/single-profiles">Profile</Link>
+                                                    <p onClick={logOut}>Logout</p>
                                                 </span>
                                             </li>
                                         ) : (

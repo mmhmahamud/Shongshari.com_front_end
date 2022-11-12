@@ -10,7 +10,7 @@ import { userLoggedIn } from "../../redux/features/auth/authenticationSlices";
 const RegisterMember = () => {
     const [regAsMember, { data: response, isLoading }] = useRegAsMemberMutation();
     const [createUserWithEmailAndPassword, user, error] = useCreateUserWithEmailAndPassword(auth);
-    const [updateProfile] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ const RegisterMember = () => {
         const storageRef = ref(storage, `image/${imageName}`);
         await uploadBytes(storageRef, image).then(async snapshot => {
             await getDownloadURL(snapshot.ref).then(async downloadURL => {
-                await updateProfile({ photoURL: downloadURL.toString() });
+                await updateProfile({ photoURL: downloadURL.toString(), displayName: result.firstName });
                 // image = downloadURL.toString();
                 if (user) {
                     result.profilePhoto = downloadURL.toString();
@@ -94,7 +94,7 @@ const RegisterMember = () => {
                         </div>
 
                         <div class="button">
-                            <input type="submit" value={isLoading ? "Loading..." : "Register"} />
+                            <input type="submit" value={isLoading || updating ? "Loading..." : "Register"} />
                         </div>
                     </form>
                 </div>
