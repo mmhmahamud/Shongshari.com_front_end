@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useRegAsMemberMutation } from "../../redux/features/auth/authApi";
-import { userLoggedIn } from "../../redux/features/auth/authSlices";
+import { userLoggedIn } from "../../redux/features/auth/authenticationSlices";
 
 const RegisterMember = () => {
     const [regAsMember, { data: response, isLoading }] = useRegAsMemberMutation();
@@ -22,7 +22,7 @@ const RegisterMember = () => {
             navigate("/");
             dispatch(userLoggedIn({ userCredentials: response, isauthenticated: true }));
         }
-    }, [response]);
+    }, [response, dispatch, navigate]);
     return (
         <div className="shaskfslfh">
             <div class="containersha">

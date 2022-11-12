@@ -1,5 +1,5 @@
 import apiSlice from "./api/apiSlice";
-import authSlices from "./features/auth/authSlices";
+import authSlices from "./features/auth/authenticationSlices";
 import AgentSlice from "./slices/AgentSlice";
 import AuthSlices from "./slices/AuthSlice";
 import BlogSlice from "./slices/BlogSlice";
