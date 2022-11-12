@@ -4,13 +4,20 @@ import pic1 from "../../assets/img/play-store-logo-nisi-filters-australia-11.png
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+    const result = Object.fromEntries(data.entries());
+  };
+
   return (
     <>
       <div className="shaskfslfh">
         <div class="containersha">
           <div class="title">Login</div>
           <div class="content">
-            <form>
+            <form onSubmit={handleLogin}>
               <div class="user-details">
                 <div class="input-box">
                   <span class="details">Email</span>
