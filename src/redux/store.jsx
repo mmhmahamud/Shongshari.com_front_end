@@ -1,4 +1,5 @@
 import apiSlice from "./api/apiSlice";
+import authSlices from "./features/auth/authenticationSlices";
 import AgentSlice from "./slices/AgentSlice";
 import AuthSlices from "./slices/AuthSlice";
 import BlogSlice from "./slices/BlogSlice";
@@ -15,32 +16,32 @@ import SliderSlices from "./slices/SliderSlice";
 
 const { configureStore } = require("@reduxjs/toolkit");
 
-export const store = () => configureStore({
-  reducer: {
-    [apiSlice.reducerPath]: apiSlice.reducer,
-    shopValue: ShopSlices,
-    blogValue: BlogSlice,
-    courseValue: CourseSlices,
-    modalValue: ModalSlices,
-    sliderValue: SliderSlices,
-    memberPackValue: MembershipSlice,
-    authValue: AuthSlices,
-    profileValue: ProfileSlices,
-    kaziValue: KaziSlice,
-    AgentValue: AgentSlice,
-    LawyerValue: LawyerSlice,
-    FindPartner:FindPartnerSlice,
-    PostSlices: PostSlices
-  },
-  devTools: process.env.NODE_ENV !== "production",
-  middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware({
-          serializableCheck: false,
-        }).concat(apiSlice.middleware),
-})
+export const store = () =>
+    configureStore({
+        reducer: {
+            [apiSlice.reducerPath]: apiSlice.reducer,
+            shopValue: ShopSlices,
+            blogValue: BlogSlice,
+            courseValue: CourseSlices,
+            modalValue: ModalSlices,
+            sliderValue: SliderSlices,
+            memberPackValue: MembershipSlice,
+            authValue: AuthSlices,
+            profileValue: ProfileSlices,
+            kaziValue: KaziSlice,
+            AgentValue: AgentSlice,
+            LawyerValue: LawyerSlice,
+            FindPartner: FindPartnerSlice,
+            PostSlices: PostSlices,
+            authentications: authSlices,
+        },
+        devTools: process.env.NODE_ENV !== "production",
+        middleware: getDefaultMiddleware =>
+            getDefaultMiddleware({
+                serializableCheck: false,
+            }).concat(apiSlice.middleware),
+    });
 
 // const store = createStore(()=>[], {}, applyMiddleware());
 
 // devTools: process.env.NODE_ENV !== "production",
-
-

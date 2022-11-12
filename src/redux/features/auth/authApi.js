@@ -9,9 +9,16 @@ export const authApi = apiSlice.injectEndpoints({
                 body: data,
             }),
         }),
-        login: builder.mutation({
+        loginAsMember: builder.mutation({
             query: data => ({
-                url: "/member/auth/login",
+                url: "/member/login",
+                method: "POST",
+                body: data,
+            }),
+        }),
+        regAsMember: builder.mutation({
+            query: data => ({
+                url: "/member/register/personalDetail",
                 method: "POST",
                 body: data,
             }),
@@ -19,4 +26,4 @@ export const authApi = apiSlice.injectEndpoints({
     }),
 });
 
-export const { useRegisterMutation, useLoginMutation } = authApi;
+export const { useRegisterMutation, useLoginAsMemberMutation, useRegAsMemberMutation } = authApi;

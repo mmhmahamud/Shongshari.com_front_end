@@ -1,13 +1,9 @@
 import { MemoMemberSLider } from "./MemberSLider";
-import p1 from "./../../../assets/img/registered/p1.png";
-import p2 from "./../../../assets/img/registered/p2.png";
-import p3 from "./../../../assets/img/registered/p3.png";
-import p4 from "./../../../assets/img/registered/p4.png";
-import p5 from "./../../../assets/img/registered/p5.png";
 import shape from "./../../../assets/img/registered/shape.png";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import dummyData from "../topProfile/dummyData";
 
 const settings = {
   dots: false,
@@ -20,6 +16,7 @@ const settings = {
   swipeToSlide: true,
 };
 function MemberSection() {
+  console.log(dummyData);
   const handlePopUp = () => {
     toast.warning("Under construction");
   };
@@ -48,56 +45,18 @@ function MemberSection() {
           </div>
           <div className="col-xl-7">
             <Slider {...settings}>
-              <div className="swiper-slide">
-                <div className="single-slider">
-                  <div className="img">
-                    <img src={p1} alt="img" />
-                  </div>
-                  <div className="inner-content">
-                    <h4 className="name">DANA MILLS</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="single-slider">
-                  <div className="img">
-                    <img src={p2} alt="img" />
-                  </div>
-                  <div className="inner-content">
-                    <h4 className="name">DANA MILLS</h4>
+              {dummyData.map((data) => (
+                <div className="swiper-slide">
+                  <div className="single-slider">
+                    <div className="img">
+                      <img src={data.img} alt="img" />
+                    </div>
+                    <div className="inner-content">
+                      <h4 className="name">{data.name}</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="single-slider">
-                  <div className="img">
-                    <img src={p3} alt="img" />
-                  </div>
-                  <div className="inner-content">
-                    <h4 className="name">DANA MILLS</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="single-slider">
-                  <div className="img">
-                    <img src={p4} alt="img" />
-                  </div>
-                  <div className="inner-content">
-                    <h4 className="name">DANA MILLS</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-                <div className="single-slider">
-                  <div className="img">
-                    <img src={p5} alt="img" />
-                  </div>
-                  <div className="inner-content">
-                    <h4 className="name">DANA MILLS</h4>
-                  </div>
-                </div>
-              </div>
+              ))}
             </Slider>
           </div>
         </div>
