@@ -187,7 +187,6 @@ function FIndPartner() {
             </div>
           </div>
         </div>
-
         <div className="joun-button">
           <button
             type="submit"
