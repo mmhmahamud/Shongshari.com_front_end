@@ -39,6 +39,7 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import SingleProfiles from "../pages/singleProfile/SingleProfiles";
 import RegisterMember from "../pages/RegisterMember/RegisterMember";
+import LoginPage from "../pages/LoginPage/LoginPage";
 // import ProductPage from "../pages/product/ProductPageductPage";
 
 function Router() {
@@ -108,7 +109,7 @@ function Router() {
         <Route path="/register-member" element={<RegisterMember />} />
 
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginModal />} />
+        <Route path="/login" element={<LoginPage />} />
 
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
